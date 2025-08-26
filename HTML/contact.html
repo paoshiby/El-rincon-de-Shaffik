@@ -21,15 +21,15 @@
     <main style="margin-bottom: 23%; margin-top: 5%;">
         <legend style="text-align: center; font-size: xx-large; padding-bottom: 2%;">Formulario de Contacto</legend>
         <div>
-            <table style="border-spacing: 30px 20px; padding-left: 28%; ">
+            <table style="border-spacing: 30px 15px; margin-left: 28%;">
                 <form>
                     <tr>
                         <td style="font-size: large; color: #2f00ff;">
                             <label for="contname">Nombres:</label>
                         </td>
                         <td >
-                            <input type="text" id="contname" name="contname" placeholder="Nombres" style="width: 45%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
-                            <input type="text" id="contname" name="contlastname" placeholder="Apellidos" style="width: 49%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
+                            <input type="text" id="contname" name="contname" placeholder="Nombres" required style="width: 45%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
+                            <input type="text" id="contname" name="contlastname" placeholder="Apellidos" required style="width: 50%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
                         </td>
                     </tr>
                     <tr>
@@ -37,7 +37,15 @@
                             <label for="">Email:</label>
                         </td>
                         <td >
-                            <input type="email" placeholder="example@gmail.com" style="width: 97%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
+                            <input type="email" placeholder="example@gmail.com" required style="width: 97%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: large; color: #2f00ff;">
+                            <label for="bday">Fecha de nacimiento:</label>
+                        </td>
+                        <td >
+                            <input type="date" name="bday" id="birthday" style="font-size: large; width: 97%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
                         </td>
                     </tr>
                     <tr>
@@ -46,7 +54,25 @@
                         </td>
                         <td >
                             <input type="text" value="+569" name="contphone" readonly  style="width: 44px; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;" >
-                            <input type="number" id="contphone" name="contphone"placeholder="12345678" style="width: 83%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
+                            <input type="tel" id="contphone" name="contphone"placeholder="12345678" style="width: 83.5%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: large; color: #2f00ff; padding-bottom: 11%;">
+                            <label for="gender">Sexo:</label>
+                        </td>
+                        <td >
+                            <input type="radio" value="Mujer" name="gender" id="fgender">
+                            <label for="fgender" style="font-size: large; color: #2f00ff;">Mujer</label>
+                            <br>
+                            <input type="radio" id="mgender" name="gender" value="Hombre" >
+                            <label for="mgender" style="font-size: large; color: #2f00ff;">Hombre</label>
+                            <br>
+                            <input type="radio" value="No binario" name="gender" id="igender">
+                            <label for="igender" style="font-size: large; color: #2f00ff;">No binario</label>
+                            <br>
+                            <input type="radio" id="ogender" name="gender" value="Otro">
+                            <label for="ogender" style="font-size: large; color: #2f00ff;">Otro</label>
                         </td>
                     </tr>
                     <tr>
@@ -54,7 +80,7 @@
                             <label for="subject">Asunto:</label>
                         </td>
                         <td>
-                            <select name="subject" id="sub" style="width: 100%; height: 25px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff; font-size: medium;">
+                            <select name="subject" id="sub"  required style="width: 98%; height: 25px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff; font-size: medium;">
                                 <option value="1" style="color: #2f00ff;font-size: medium; background-color:#ecc06eb3; border: 1px #ecc06eb3;">Otro</option>
                                 <option value="2" style="color: #2f00ff; font-size: medium; background-color:#ecc06eb3; border: 1px #ecc06eb3;">Información sobre academias en Chile</option>
                                 <option value="3" style="color: #2f00ff; font-size: medium; background-color:#ecc06eb3; border: 1px #ecc06eb3;">Información de diseñadores de vestuarios</option>
@@ -63,11 +89,37 @@
                         </td>
                     </tr>
                     <tr>
-                        <td style="font-size: large; padding-bottom: 40%;">
-                            <label for="message" style="color: #2f00ff;">Mensaje:</label>
+                        <td style="font-size: large; color: #2f00ff; padding-bottom: 11%;">
+                            <label for="motive">Motivo de interés:</label>
+                        </td>
+                        <td >
+                            <input type="checkbox" name="motive" id="knowledge">
+                            <label for="knowledge" style="font-size: 18px; color: #2f00ff;">Conocimiento General</label>
+                            <br>
+                            <input type="checkbox" name="motive" id="find">
+                            <label for="knowledge" style="font-size: 18px; color: #2f00ff;">Encontrar academia</label>
+                            <br>
+                            <input type="checkbox" name="motive" id="search">
+                            <label for="knowledge" style="font-size: 18px; color: #2f00ff;">Buscar vestuarios</label>
+                            <br>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="font-size: large; color: #2f00ff;">
+                            <label for="years">Años en la danzas árabes:</label>
+                        </td>
+                        <td >
+                            <input type="range" name="years" id="ydancing" min="0" max="20">
+                            <input type="text" readonly value="0 se tomará como iniciante/principiante" style="width: 60%; background-color: #1c329400; border: 1px solid #1c329400;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: large; color: #2f00ff; padding-bottom: 39%;">
+                            <label for="message" >Mensaje:</label>
                         </td>
                         <td>
-                            <textarea name="message" id="message" rows="15" cols="50" style="background-color:#ecc06eb3; border: 1px #ecc06eb3;"></textarea>
+                            <textarea name="message" id="message" required rows="15" cols="50" style="background-color:#ecc06eb3; border: 1px #ecc06eb3;"></textarea>
                         </td>
                     </tr>
                     <tr>
