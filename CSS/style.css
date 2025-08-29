@@ -1,0 +1,61 @@
+@import url("/CSS/index.css");
+@import url("/CSS/contact.css");
+@import url("/CSS/login.css");
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative; 
+    background-image: url(/img/fondo3.png); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    overflow-x: hidden;
+    padding: 1%;
+}
+nav{
+    margin-bottom: 5%; 
+    background-color: #55d5c9; 
+    border: 2px dotted #1c3394; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+nav> .img-container{
+    flex: 2;
+    margin: 1%;
+}
+nav> .button-container{
+    flex: 1; 
+    display: flex; 
+    gap: 5px; 
+    justify-content: end; 
+    margin-right: 1%;
+}
+button{
+    width: 30%;
+    height: 30px; 
+    background-color: #f5bf57; 
+    color: #1c3394; 
+    border: #f5bf57;
+}
+button> a{
+    text-decoration: none; 
+    font-weight: bolder;
+}
+header{
+    width: 100%; 
+    margin-bottom: 5%;
+}
+header> img{
+    width: 100%;
+}
+main{
+    margin-bottom: 5%; 
+    margin-top: 5%;
+}
+footer{
+    bottom: 0.5%; 
+    width: 100%;
+}
