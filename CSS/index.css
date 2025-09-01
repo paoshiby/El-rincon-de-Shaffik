@@ -56,5 +56,24 @@ article> img{
 #t3{
     margin-top: 2%; 
     width: 100%; 
-    background-color: #55d5c9;
+    background-color: #55d5c9;    
+    border: 2px dotted  #1c3394;
+}
+ul> li{
+    list-style: none;
+    line-height: 30px;
+}
+a{
+    text-decoration: none;     
+}
+.a1{
+    font-size: large;
+    color: black; 
+}
+a> span{
+    color: #1c3394;
+}
+td> p{
+    text-align: center;
+    font-size: large;
 }
