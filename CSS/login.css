@@ -1,0 +1,8 @@
+.middle-lower-body{
+    display: flex; 
+    width: 100%; 
+    border: 2px dotted  #269998; 
+    background-color: #55d5c8; 
+    padding: 2%;
+    justify-content: space-between;
+}
