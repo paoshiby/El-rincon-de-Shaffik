@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Adelia';
+    src: url('/fonts/adelia.otf') format('opentype'),
+        url('/fonts/adelia.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Better_together';
+    src: url('/fonts/Better\ Together.otf') format('opentype'),
+        url('/fonts/Better\ Together.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Furqan';
+    src: url('/fonts/Furqan.otf') format('opentype'),
+        url('/fonts/Furqan.ttf') format('truetype'),
+        url('/fonts/Furqan.woff') format('woff');
+}
+@font-face {
+    font-family: 'Kahfee';
+    src: url('/fonts/Kahfee.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Michland';
+    src: url('/fonts/Michland\ Script.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Persian';
+    src: url('/fonts/Persian\ Personal\ Used.otf') format('opentype');
+}
+@font-face {
+    font-family: 'RamadhanMubarok';
+    src: url('/fonts/RamadhanMubarok-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Ramadhan';
+    src: url('/fonts/Special\ Ramadhan\ \(DEMO\).otf') format('opentype');
+}
+@font-face {
+    font-family: 'WorldDiscovery';
+    src: url('/fonts/WorldDiscoveryTwo_PERSONAL_USE_ONLY.otf') format('opentype'),
+        url('/fonts/WorldDiscoveryThree_PERSONAL_USE_ONLY.otf') format('opentype'),
+        url('/fonts/WorldDiscoveryFour_PERSONAL_USE_ONLY.otf') format('opentype'),
+        url('/fonts/WorldDiscoveryFive_PERSONAL_USE_ONLY.otf') format('opentype'),
+        url('/fonts/WorldDiscoverySix_PERSONAL_USE_ONLY.otf') format('opentype'),
+        url('/fonts/WorldDiscoverySwash_PERSONAL_USE_ONLY.otf') format('opentype');
+}
+:root{
+    --fuente-adelia: 'Adelia';
+    --fuente-btogether: 'Better_together';
+}

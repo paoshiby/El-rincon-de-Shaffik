@@ -75,7 +75,7 @@ footer{
     background-color: #55d5c9;    
     border: 2px dotted  #1c3394;
 }
-ul> li{
+.footlist> li{
     list-style: none;
     line-height: 30px;
 }

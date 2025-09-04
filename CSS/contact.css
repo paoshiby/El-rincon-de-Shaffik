@@ -1,3 +1,12 @@
+.Baner{
+    background-image: url(/img/Pyramid\ of\ Giza\ .jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.Baner> img{
+    opacity: 0%;
+}
 legend{
     text-align: center; 
     font-size: xx-large; 
