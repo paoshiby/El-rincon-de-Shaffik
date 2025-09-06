@@ -89,6 +89,7 @@ a{
 }
 a> span{
     color: #1c3394;
+    font-family: var(--fuente-tres);
 }
 td> p{
     text-align: center;

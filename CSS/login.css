@@ -90,12 +90,38 @@
     flex: 1;
 }
 #seclog> img{
-    padding: 10% 0% 0% 5%;
+    margin: 21.5% 0% 0% 2%;
 }
 #artlog{
     flex: 2;
 }
-#artlog> h2{
+#artlog> h1{
     padding: 0 4%; 
     text-align: center;
+    font-family: var(--fuente-cinco);
+    font-size: 50px;
+}
+#artlog> p{
+    font-size: large; 
+    padding: 0 4%; 
+    text-align: justify;
+    font-size: larger;
+}
+#artlog> p > strong{
+    color: #1c3394;
+}
+#shars{
+    font-family: var(--fuente-siete);
+    font-size: 25px;
+}
+#artlog> ul> li{
+    
+    font-size: larger;
+}
+#testo{
+    font-family: var(--fuente-uno);
+    font-size: 18px;
+}
+#artlog> ul> li > strong{
+    color: #1c3394;
 }

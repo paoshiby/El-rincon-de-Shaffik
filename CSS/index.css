@@ -45,6 +45,7 @@ span{
     font-weight: bolder;
     font-style: italic;
     font-size: 115%;
+    font-family: var(--fuente-tres);
 }
 article{
     margin-bottom: 5%; 
