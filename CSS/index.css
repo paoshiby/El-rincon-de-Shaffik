@@ -28,11 +28,12 @@ aside{
 }
 aside> img{
     padding-left: 15%;
-    width: 88%;
+    width: 76%;
 }
 aside> p{
-    font-size: x-large; 
+    font-size: large; 
     padding: 0 4%;
+    font-family: var(--fuente-uno);
 }
 .p1{
     text-align: center;
@@ -43,8 +44,7 @@ aside> p{
 span{
     color: #1c3394;
     font-weight: bolder;
-    font-style: italic;
-    font-size: 115%;
+    font-size: 25px;
     font-family: var(--fuente-tres);
 }
 article{
