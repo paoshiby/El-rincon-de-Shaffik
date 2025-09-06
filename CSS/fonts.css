@@ -44,6 +44,13 @@
         url('/fonts/WorldDiscoverySwash_PERSONAL_USE_ONLY.otf') format('opentype');
 }
 :root{
-    --fuente-adelia: 'Adelia';
-    --fuente-btogether: 'Better_together';
+    --fuente-uno: 'Adelia';
+    --fuente-dos: 'Better_together';
+    --fuente-tres: 'Furqan';
+    --fuente-cuatro:'Kahfee';
+    --fuente-cinco: 'Michland';
+    --fuente-seis: 'Persian';
+    --fuente-siete: 'RamadhanMubarok';
+    --fuente-ocho: 'Ramadhan';
+    --fuente-nine:'WolrdDiscovery';
 }

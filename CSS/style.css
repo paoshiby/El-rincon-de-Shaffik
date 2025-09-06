@@ -1,6 +1,7 @@
-@import url("/CSS/index.css");
-@import url("/CSS/contact.css");
-@import url("/CSS/login.css");
+@import url('/CSS/index.css');
+@import url('/CSS/contact.css');
+@import url('/CSS/login.css');
+@import url('/CSS/fonts.css');
 *{
     box-sizing: border-box;
 }
