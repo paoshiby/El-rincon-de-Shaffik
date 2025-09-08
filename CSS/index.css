@@ -19,13 +19,11 @@
     flex: 1; 
     margin-bottom: 2%;
 }
-aside{
+#home{
+    border: 2px dotted  #269998;
     flex: 2; 
     margin-bottom: 2%; 
     background-color: #55d5c8;
-}
-#home{
-    border: 2px dotted  #269998; 
 }
 #home> img{
     padding-left: 15%;
@@ -51,7 +49,7 @@ aside{
 article{
     margin-bottom: 5%; 
     width: 100%; 
-    margin-top: 1%;
+    margin-top: 5%;
 }
 article> img{
     width: 100%;

@@ -9,6 +9,11 @@
 .Baner> img{
     opacity: 0%;
 }
+.back{
+    width: 50%;
+    background:rgba(67, 211, 221, 0.8);
+    margin-left: 28%;
+}
 legend{
     text-align: center; 
     font-size: xx-large; 
@@ -17,39 +22,41 @@ legend{
 }
 .formu{
     border-spacing: 30px 20px; 
-    padding-left: 28%;
 }
-.t1{
-    font-size: large; 
-    color: #2f00ff;
+.t1{ 
+    color: #1c3394;
+}
+.t1> label{
+    font-size: 20px;
+    font-weight: bold;
 }
 .inputs{
     height: 20px; 
     background-color:#ecc06eb3; 
     border: 1px #ecc06eb3; 
-    color: #2f00ff;
-    font-size: medium;
+    color: #1c3394;
+    font-size: larger;
 }
 #contname{
-    width: 47.5%;
+    width: 48%;
 }
 #mail , #sub{
-    width: 96.2%;
+    width: 97%;
 }
 #contphone{
-    width: 82%;
+    width: 84%;
 }
 .codearea{
     width: 13%;
 }
 #mess{
-    padding-bottom: 43%;
+    padding-bottom: 52%;
 }
 #message{
     background-color:#ecc06eb3; 
     border: 1px #ecc06eb3;
-    color: #2f00ff;
-    font-size: medium;
+    color: #1c3394;
+    font-size: large;
 }
 #boton{
     text-align: right;

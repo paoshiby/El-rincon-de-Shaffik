@@ -111,6 +111,7 @@
 	position:relative;
 	display:inline-block;
 	background:rgba(255,255,255,.1);
+  color: #f5bf57;
 }
 .login-form .group label .icon:before,
 .login-form .group label .icon:after{
@@ -131,6 +132,9 @@
 	top:6px;
 	right:0;
 	transform:scale(0) rotate(0);
+}
+.login-form .group .check + label{
+  color: #f5bf57;
 }
 .login-form .group .check:checked + label{
 	color:#fff;
