@@ -3,117 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
     <title>El Rincón de Shafik</title>
 </head>
-<body style="padding: 2%; position: relative; background-image: url(/img/fondo3.png); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed; overflow-x: hidden;">
-    <nav style="margin-bottom: 2.5%; background-color: #55d5c9; border: 2px dotted #1c3394; display: flex; justify-content: space-between; align-items: center;">
-        <div style="flex: 2; margin: 1%;">
+<body>
+    <nav>
+        <div class="img-container">
             <img src="/img/2.png" alt="mono" width="90">
         </div>
-        <div style="flex: 1; display: flex; gap: 5px; justify-content: end; margin-right: 1%;">
-            <button style="width: 25%;height: 30px; background-color: #f5bf57; color: #1c3394; border: #f5bf57;"><a href="index.html" style="text-decoration: none; font-weight: bolder;">Inicio</a></button>
-            <button style="width: 25%;height: 30px; background-color: #f5bf57; color: #1c3394; border: #f5bf57;"><a href="contact.html" style="text-decoration: none; font-weight: bolder;">Contacto</a></button>
-            <button style="width: 25%;height: 30px; background-color: #f5bf57; color: #1c3394; border: #f5bf57;"><a href="login.html" style="text-decoration: none; font-weight: bolder;">Inicio Sesión</a></button>
+        <div class="button-container">
+            <button><a href="index.html">Inicio</a></button>
+            <button><a href="us.html">Nosotros</a></button>
+            <button><a href="contact.html">Contacto</a></button>
+            <button><a href="login.html">Inicio Sesión</a></button>
         </div>
     </nav>
-    <header style="width: 100%; margin-bottom: 2%;">
-        <img src="/img/7YrobQvFFzw8aWsAUtoYXB.png" alt="banner" style="width: 100%;" height="500">
+    <header>
+        <div class="banner"></div>
     </header>
-    <main style="margin-bottom: 20%; margin-top: 3%;">
-        <div class="login" style="width: 400px; margin: 16px auto; ">
-            <div class="login-triangle" style=" width: 0; margin-right: auto; margin-left: auto; border: 12px solid transparent; border-bottom-color: #28d;"></div>
-                <h2 class="login-header" style=" margin-top: 0; margin-bottom: 0; background: #28d; padding: 20px; font-size: 1.4em; font-weight: normal; text-align: center; text-transform: uppercase; color: #fff;">Log in</h2>
+    <main>
+        <!--Buscar otro login más acorde con el diseño de la página-->
+        <div class="login">
+            <div class="login-triangle" ></div>
+                <h2 class="login-header" >Log in</h2>
                 <form class="login-container">
-                    <p style=" margin-top: 0; margin-bottom: 0; padding: 12px;"><input type="email" placeholder="Email" style=" box-sizing: border-box; display: block; width: 100%; border-width: 1px; border-style: solid; padding: 16px; outline: 0; font-family: inherit; font-size: 0.95em; background: #fff; border-color: #bbb; color: #555;"></p>
-                    <p style=" margin-top: 0; margin-bottom: 0; padding: 12px;"><input type="password" placeholder="Password" style=" box-sizing: border-box; display: block; width: 100%; border-width: 1px; border-style: solid; padding: 16px; outline: 0; font-family: inherit; font-size: 0.95em;background: #fff; border-color: #bbb; color: #555;"></p>
-                    <p style=" margin-top: 0; margin-bottom: 0; padding: 12px;"><input type="submit" value="Log in" style=" box-sizing: border-box; display: block; width: 100%; border-width: 1px; border-style: solid; padding: 16px; outline: 0; font-family: inherit; font-size: 0.95em; background: #28d; border-color: transparent; color: #fff; cursor: pointer;"></p>
+                    <p ><input type="email" placeholder="Email"></p>
+                    <p ><input type="password" placeholder="Password"></p>
+                    <p ><input type="submit" value="Log in"></p>
                 </form>
             </div>
         </div>
-        <div style="display: flex; width: 96.2%; border: 2px dotted  #269998; background-color: #55d5c8; padding: 2%;">
-            <section style="flex: 1;">
+        <div class="middle-lower-body">
+            <section id="seclog">
                 <img src="/img/images.jfif" alt="Painting" width="400" height="350">
             </section>
-            <aside style="flex: 2;">
-                <h3 style=" padding: 0 4%; text-align: center;">¿Qué evoca esta imagen?</h3>
-                <p style="font-size: large; padding: 0 4%; text-align: justify;">En esta imagen se representa las parte de las danzas árabes o <strong style="color: #269998;">raqs sharqi</strong>
-                    , la danza la cual es muy antigua y tiene una historia larga y compleja, con raíces de varias culturas y regiones, como <strong style="color: #269998;">Egipto</strong>, <strong style="color: #269998;">Turquía</strong> 
-                    y <strong style="color: #269998;">Persia</strong>. Es tema de debate el rigen exacto, pero aun así en la actalidad evoluciona.
+            <aside id="artlog">
+                <h1>¿Qué evoca esta imagen?</h1>
+                <p>En esta imagen se representa las parte de las danzas árabes o <strong id="shars">raqs sharqi</strong>
+                    , la danza la cual es muy antigua y tiene una historia larga y compleja, con raíces de varias culturas y regiones, como <strong>Egipto</strong>, <strong>Turquía</strong> 
+                    y <strong>Persia</strong>. Es tema de debate el rigen exacto, pero aun así en la actalidad evoluciona.
                 </p>
-                <p style="font-size: large; padding: 0 4%; text-align: justify;">Es una danza utilizada en lo social y escénico, en lo social es debido a que es una danza mayormente popular en los paises árabes hasta hoy en día.
+                <p>Es una danza utilizada en lo social y escénico, en lo social es debido a que es una danza mayormente popular en los paises árabes hasta hoy en día.
                 </p>
-                <p style="font-size: large; padding: 0 4%; text-align: justify;">En resumen, esta imagen es una obra de arte que se inspira y combina elementos de:
+                <p>En resumen, esta imagen es una obra de arte que se inspira y combina elementos de:
                 </p>
                 <ul>
-                    <li style="font-size: large; padding: 0 4%; text-align: justify;"><strong style="color: #269998;">Folclore y literatura</strong>, particularmente de Alf Leyla wa Leyla, más conocida como "Las Mil y una noches"</li>
-                    <li style="font-size: large; padding: 0 4%; text-align: justify;">La forma de arte de la danza del vientre</li>
+                    <li><strong>Folclore y literatura</strong>, particularmente de <span id="testo">"Alf Leyla wa Leyla"</span> , más conocida como <span id="testo">"Las Mil y una noches"</span>.</li>
+                    <li>La forma de arte de la danza del vientre.</li>
                 </ul>
             </aside>
         </div>
     </main>
-    <footer style="bottom: 2%; position: absolute; width: 100%;">
-        <table style="border: 2px dotted  #1c3394; border-spacing: 10px 5px;background-color: #55d5c9; ">
-            <tr>
-                <th>Nuestro Contenido</th>
-                <th>Información</th>
-                <th>Redes Sociales</th>
-            </tr>
-            <tr>
-                <td style="padding-left: 7%;">
-                    <div>
-                        <ul >
-                            <li style="list-style: none;">
-                                <a href="#" style="text-decoration: none; color: black; font-size: large;">Origen del Bellydance</a>
-                            </li>
-                            <li style="list-style: none;">
-                                <a href="#" style="text-decoration: none; color: black; font-size: large;">Golden Era</a>
-                            </li>
-                            <li style="list-style: none;">
-                                <a href="#" style="text-decoration: none; color: black; font-size: large;">Estilos de Bellydance</a>
-                            </li>
-                        </ul>
-                    </div>
-                </td>
-                <td style=" padding-left: 5.9%;">
-                    <ul >
-                        <li style="list-style: none;">
-                            <a href="#" style="text-decoration: none; color: black; font-size: large;">¿Quién es <span style="color: #1c3394;">'El Rincón de Shaffik'</span>?</a>
+    <footer>
+        <div class="foot">
+            <div class="ft">
+                <div id="t">
+                    <h3>Nuestro Contenido</h3>
+                </div>
+                <div id="t-2">
+                    <h3>Información</h3>
+                </div>
+                <div id="t-3">
+                    <h3>Redes Sociales</h3>
+                </div>
+                <div id="t1">
+                    <ul class="footlist">
+                        <li>
+                            <a href="#" class="a1">Origen del Bellydance</a>
                         </li>
-                        <li style="list-style: none;">
-                            <a href="contact.html" style="text-decoration: none; color: black; font-size: large;">Contacto</a>
+                        <li>
+                            <a href="#" class="a1">Golden Era</a>
                         </li>
-                        <li style="list-style: none;">
-                            <a href="#" style="text-decoration: none; color: black; font-size: large;">Preguntas Frecuentess</a>
+                        <li>
+                            <a href="#" class="a1">Estilos de Bellydance</a>
                         </li>
                     </ul>
-                </td>
-                <td style="width: 33.3%;">
-                    <div>
-                        <table style="border-spacing: 180px 0px;">
-                            <tr>
-                                <td style="width: 100%;">
-                                    <a href="#"><img src="/img/instagram.png" alt="instagram" width="50"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 100%; padding-left: 13%;">
-                                    <img src="/img/whatsapp.png" alt="Whatsapp" width="37">
-                                </td>
-                            </tr>
-                        </table>
+                </div>
+                <div id="t4">
+                    <ul class="footlist">
+                        <li>
+                            <a href="#" class="a1">¿Quién es <span id="we">'El Rincón de Shaffik'</span>?</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="a1">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="#" class="a1">Preguntas Frecuentess</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="t2">
+                    <div id="face">
+                        <a href="#"><img src="/img/facebook.png" alt="facebook" width="50"></a>
                     </div>
-                </td>
-            </tr>
-        </table>
-        <table style="margin-top: 2%; width: 96.5%; background-color: #55d5c9;">
-            <tr>
-                <td style="text-align: center;border: 2px dotted  #1c3394;">
-                    <div>
-                        <p>&copy; Paola Medina Fernández 2025</p>
+                    <div id="insta">
+                        <a href="#"><img src="/img/instagram.png" alt="instagram" width="65"></a>
                     </div>
-                </td> 
-            </tr>
-        </table>
+                    <div id="wha">
+                        <a href="#"><img src="/img/whatsapp.png" alt="Whatsapp" width="50"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="t3">
+            <p>&copy; Paola Medina Fernández 2025</p>
+        </div>
     </footer>
 </body>
 </html>

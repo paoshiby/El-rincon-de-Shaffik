@@ -1,0 +1,141 @@
+@import url('/CSS/fonts.css');
+.Banner{
+    background-image: url(/img/wadirum.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+}
+.Banner> img{
+    opacity: 0%;
+}
+.middle{
+    display: flex; 
+    width: 100%; 
+    gap: 1%; 
+    justify-content: center;
+}
+#left{
+    flex: 1;
+    background-color: #5b89b4e0;
+    height: 400px;
+    padding: 1%;
+}
+#left> h2{
+    font-family: var(--fuente-cuatro);
+    text-align: center;
+    color: #1c3394;
+    font-size: 50px;
+}
+#left> p{
+    font-family: var(--fuente-once);
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: justify;
+}
+#right{
+    flex: 1;
+    height: 400px;
+}
+#right> img{
+    width: 100%;
+    height: 399px;
+}
+#right, #left{
+    margin-bottom: 2%;
+}
+#izq{
+    flex: 1;
+    height: 400px;
+}
+#izq> img{
+    width: 100%;
+    height: 399px;
+}
+#der{
+    flex: 1;
+    background-color: #5b89b4e0;
+    height: 400px;
+    padding: 1%;
+}
+#der> h2{
+    font-family: var(--fuente-cuatro);
+    text-align: center;
+    color: #1c3394;
+    font-size: 50px;
+}
+#der> p{
+    font-family: var(--fuente-once);
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: justify;
+}
+.iconos{
+    background-color: #55d5c9; 
+    border: 2px dotted #1c3394; 
+    height: 150px;
+}
+.icons{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 50px;
+    column-gap: 20%;
+    padding-inline-start: 60px;
+}
+.icons> .item-a> img{
+    width: 130%;
+    grid-column: 1/2;
+    padding-top: 13px;
+}
+.icons> .item-b> img{
+    width: 60%;
+    grid-column: 3/4;
+    padding-top: 13px;
+}
+.icons> .item-c> img{
+    width: 130%;
+    grid-column: 5/6;
+    padding-top: 8px;
+}
+.icons> .item-d> img{
+    width: 120%;
+    grid-column: 7/8;
+    padding-top: 13px;
+}
+.icons> div{
+    transition: transform 0.3s ease-in-out;
+}
+.icons > .item-a:hover,
+.icons > .item-b:hover,
+.icons > .item-c:hover,
+.icons > .item-d:hover {
+    transform: scale(1.2);
+}
+.map{
+    display: flex;
+    gap: 2%;
+}
+iframe{
+    flex: 1;
+}
+#fact{
+    flex: 1;
+    height: 300px;
+    padding: 2%;
+    background-color: #5b89b4e0;
+}
+#fact> h3{
+    font-family: var(--fuente-seis);
+    text-align:start;
+    color: #1c3394;
+    font-size: 35px;
+}
+#fact> p, #stairs{
+    font-family: var(--fuente-once);
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: justify;
+}
+#stairs{
+    color: #f5bf57;
+}

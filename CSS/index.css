@@ -1,0 +1,58 @@
+@import url('/CSS/fonts.css');
+.baner{
+    background-image: url(/img/piramids.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+}
+.baner> img{
+    opacity: 0%;
+}
+.middle-body{
+    display: flex; 
+    width: 100%; 
+    gap: 2%; 
+    justify-content: space-between;
+}
+.secin{
+    flex: 1; 
+    margin-bottom: 2%;
+}
+aside{
+    flex: 2; 
+    margin-bottom: 2%; 
+    background-color: #55d5c8;
+}
+#home{
+    border: 2px dotted  #269998; 
+}
+#home> img{
+    padding-left: 15%;
+    width: 76%;
+}
+#home> p{
+    padding: 0 4%;
+    font-family: var(--fuente-once);
+    font-size: 28.5px;
+}
+.p1{
+    text-align: center;
+}
+.p2{
+    text-align: justify;
+}
+#wel{
+    color: #1c3394;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: var(--fuente-tres);
+}
+article{
+    margin-bottom: 5%; 
+    width: 100%; 
+    margin-top: 1%;
+}
+article> img{
+    width: 100%;
+}

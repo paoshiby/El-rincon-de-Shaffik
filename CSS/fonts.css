@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Adelia';
+    src: url('/fonts/adelia.otf') format('opentype'),
+        url('/fonts/adelia.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Better_together';
+    src: url('/fonts/Better\ Together.otf') format('opentype'),
+        url('/fonts/Better\ Together.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Furqan';
+    src: url('/fonts/Furqan.otf') format('opentype'),
+        url('/fonts/Furqan.ttf') format('truetype'),
+        url('/fonts/Furqan.woff') format('woff');
+}
+@font-face {
+    font-family: 'Kahfee';
+    src: url('/fonts/Kahfee.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Michland';
+    src: url('/fonts/Michland\ Script.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Persian';
+    src: url('/fonts/Persian\ Personal\ Used.otf') format('opentype');
+}
+@font-face {
+    font-family: 'RamadhanMubarok';
+    src: url('/fonts/RamadhanMubarok-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Ramadhan';
+    src: url('/fonts/Special\ Ramadhan\ \(DEMO\).otf') format('opentype');
+}
+@font-face {
+    font-family: 'WorldDiscovery';
+    src: url('/fonts/WorldDiscoveryTwo_PERSONAL_USE_ONLY.otf') format('opentype'),
+        url('/fonts/WorldDiscoveryThree_PERSONAL_USE_ONLY.otf') format('opentype'),
+        url('/fonts/WorldDiscoveryFour_PERSONAL_USE_ONLY.otf') format('opentype'),
+        url('/fonts/WorldDiscoveryFive_PERSONAL_USE_ONLY.otf') format('opentype'),
+        url('/fonts/WorldDiscoverySix_PERSONAL_USE_ONLY.otf') format('opentype'),
+        url('/fonts/WorldDiscoverySwash_PERSONAL_USE_ONLY.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Photoshoot';
+    src: url('/fonts/Photoshoot-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OnlyGirl';
+    src: url('/fonts/KGOnlyGirlInTheWorld.otf') format('opentype'),
+        url('/fonts/KGOnlyGirlInTheWorld.ttf') format('truetype');
+}
+:root{
+    --fuente-uno: 'Adelia';
+    --fuente-dos: 'Better_together';
+    --fuente-tres: 'Furqan';
+    --fuente-cuatro:'Kahfee';
+    --fuente-cinco: 'Michland';
+    --fuente-seis: 'Persian';
+    --fuente-siete: 'RamadhanMubarok';
+    --fuente-ocho: 'Ramadhan';
+    --fuente-nine:'WolrdDiscovery';
+    --fiuente-ten: 'Photoshoot';
+    --fuente-once: 'OnlyGirl';
+}

@@ -3,203 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>El Rincón de Shafik</title>
 </head>
-<body style="padding: 2%; position: relative; background-image: url(/img/fondo3.png); background-repeat: no-repeat; background-size: cover; background-position: center;overflow-x: hidden;">
-    <nav style="margin-bottom: 2.5%; background-color: #55d5c9; border: 2px dotted #1c3394; display: flex; justify-content: space-between; align-items: center;">
-        <div style="flex: 2; margin: 1%; ">
+<body>
+    <nav>
+        <div class="img-container">
             <img src="/img/2.png" alt="mono" width="90">
         </div>
-        <div style="flex: 1; display: flex; gap: 5px; justify-content: end; margin-right: 1%;">
-            <button style="width: 25%;height: 30px; background-color: #f5bf57; color: #1c3394; border: #f5bf57;"><a href="index.html" style="text-decoration: none; font-weight: bolder;">Inicio</a></button>
-            <button style="width: 25%;height: 30px; background-color: #f5bf57; color: #1c3394; border: #f5bf57;"><a href="contact.html" style="text-decoration: none; font-weight: bolder;">Contacto</a></button>
-            <button style="width: 25%;height: 30px; background-color: #f5bf57; color: #1c3394; border: #f5bf57;"><a href="login.html" style="text-decoration: none; font-weight: bolder;">Inicio Sesión</a></button>
+        <div class="button-container">
+            <button><a href="index.html">Inicio</a></button>
+            <button><a href="us.html">Nosotros</a></button>
+            <button><a href="contact.html">Contacto</a></button>
+            <button><a href="login.html">Inicio Sesión</a></button>
         </div>
     </nav>
-    <header style="margin-bottom: 2%;">
-        <img src="/img/Pyramid of Giza .jpg" alt="banner" style="width: 99.9%;">
+    <header>
+        <div class="Baner"></div>
     </header>
-    <main style="margin-bottom: 23%; margin-top: 5%;">
-        <legend style="text-align: center; font-size: xx-large; padding-bottom: 2%;">Formulario de Contacto</legend>
+    <main>
+        <legend>Formulario de Contacto</legend>
         <div>
-            <table style="border-spacing: 30px 15px; margin-left: 28%;">
+            <table class="formu">
                 <form>
                     <tr>
-                        <td style="font-size: large; color: #2f00ff;">
+                        <td class="t1">
                             <label for="contname">Nombres:</label>
                         </td>
                         <td >
-                            <input type="text" id="contname" name="contname" placeholder="Nombres" required style="width: 45%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
-                            <input type="text" id="contname" name="contlastname" placeholder="Apellidos" required style="width: 50%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
+                            <input class="inputs" type="text" id="contname" name="contname" placeholder="Nombres">
+                            <input class="inputs" type="text" id="contname" name="contlastname" placeholder="Apellidos">
                         </td>
                     </tr>
                     <tr>
-                        <td style="font-size: large; color: #2f00ff;">
-                            <label for="">Email:</label>
+                        <td class="t1">
+                            <label for="mail">Email:</label>
                         </td>
                         <td >
-                            <input type="email" placeholder="example@gmail.com" required style="width: 97%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
+                            <input class="inputs" type="email" id="mail" name="mail" placeholder="example@gmail.com">
                         </td>
                     </tr>
                     <tr>
-                        <td style="font-size: large; color: #2f00ff;">
-                            <label for="bday">Fecha de nacimiento:</label>
-                        </td>
-                        <td >
-                            <input type="date" name="bday" id="birthday" style="font-size: large; width: 97%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: large; color: #2f00ff;">
+                        <td class="t1">
                             <label for="contphone">Teléfono:</label>
                         </td>
-                        <td >
-                            <input type="text" value="+569" name="contphone" readonly  style="width: 44px; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;" >
-                            <input type="tel" id="contphone" name="contphone"placeholder="12345678" style="width: 83.5%; height: 20px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff;">
+                        <td>
+                            <input class="codearea inputs" type="text" value="+569" readonly>
+                            <input class="inputs" type="tel" id="contphone" name="contphone"placeholder="12345678">
                         </td>
                     </tr>
                     <tr>
-                        <td style="font-size: large; color: #2f00ff; padding-bottom: 11%;">
-                            <label for="gender">Sexo:</label>
-                        </td>
-                        <td >
-                            <input type="radio" value="Mujer" name="gender" id="fgender">
-                            <label for="fgender" style="font-size: large; color: #2f00ff;">Mujer</label>
-                            <br>
-                            <input type="radio" id="mgender" name="gender" value="Hombre" >
-                            <label for="mgender" style="font-size: large; color: #2f00ff;">Hombre</label>
-                            <br>
-                            <input type="radio" value="No binario" name="gender" id="igender">
-                            <label for="igender" style="font-size: large; color: #2f00ff;">No binario</label>
-                            <br>
-                            <input type="radio" id="ogender" name="gender" value="Otro">
-                            <label for="ogender" style="font-size: large; color: #2f00ff;">Otro</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: large; color: #2f00ff;">
+                        <td class="t1">
                             <label for="subject">Asunto:</label>
                         </td>
                         <td>
-                            <select name="subject" id="sub"  required style="width: 98%; height: 25px; background-color:#ecc06eb3; border: 1px #ecc06eb3; color: #2f00ff; font-size: medium;">
-                                <option value="1" style="color: #2f00ff;font-size: medium; background-color:#ecc06eb3; border: 1px #ecc06eb3;">Otro</option>
-                                <option value="2" style="color: #2f00ff; font-size: medium; background-color:#ecc06eb3; border: 1px #ecc06eb3;">Información sobre academias en Chile</option>
-                                <option value="3" style="color: #2f00ff; font-size: medium; background-color:#ecc06eb3; border: 1px #ecc06eb3;">Información de diseñadores de vestuarios</option>
-                                <option value="4" style="color: #2f00ff; font-size: medium; background-color:#ecc06eb3; border: 1px #ecc06eb3;">Mayor información sobre la Golden Era</option>
+                            <select class="inputs" name="subject" id="sub">
+                                <option class="inputs" value="1">Otro</option>
+                                <option class="inputs" value="2">Información sobre academias en Chile</option>
+                                <option class="inputs" value="3">Información de diseñadores de vestuarios</option>
+                                <option class="inputs" value="4">Mayor información sobre la Golden Era</option>
                             </select>
                         </td>
                     </tr>
                     <tr>
-                        <td style="font-size: large; color: #2f00ff; padding-bottom: 11%;">
-                            <label for="motive">Motivo de interés:</label>
-                        </td>
-                        <td >
-                            <input type="checkbox" name="motive" id="knowledge">
-                            <label for="knowledge" style="font-size: 18px; color: #2f00ff;">Conocimiento General</label>
-                            <br>
-                            <input type="checkbox" name="motive" id="find">
-                            <label for="knowledge" style="font-size: 18px; color: #2f00ff;">Encontrar academia</label>
-                            <br>
-                            <input type="checkbox" name="motive" id="search">
-                            <label for="knowledge" style="font-size: 18px; color: #2f00ff;">Buscar vestuarios</label>
-                            <br>
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td style="font-size: large; color: #2f00ff;">
-                            <label for="years">Años en la danzas árabes:</label>
-                        </td>
-                        <td >
-                            <input type="range" name="years" id="ydancing" min="0" max="20">
-                            <input type="text" readonly value="0 se tomará como iniciante/principiante" style="width: 60%; background-color: #1c329400; border: 1px solid #1c329400;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="font-size: large; color: #2f00ff; padding-bottom: 39%;">
-                            <label for="message" >Mensaje:</label>
+                        <td class="t1" id="mess">
+                            <label for="message">Mensaje:</label>
                         </td>
                         <td>
-                            <textarea name="message" id="message" required rows="15" cols="50" style="background-color:#ecc06eb3; border: 1px #ecc06eb3;"></textarea>
+                            <textarea name="message" id="message" rows="15" cols="51"></textarea>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" style="text-align: right;">
-                            <input type="submit" value="Enviar" style="width: 20%; height: 30px; background-color: #f5bf57; color: #1c3394; border: 2px #ecbf6e; font-weight: bolder;">
+                        <td id="boton" colspan="2">
+                            <input class="boton" type="submit" value="Enviar">
                         </td>
                     </tr>
                 </form>
             </table>
         </div>
     </main>
-    <footer style="bottom: 2%; position: absolute; width: 100%;">
-        <table style="border: 2px dotted  #1c3394; border-spacing: 10px 5px;background-color: #55d5c9; ">
-            <tr>
-                <th>Nuestro Contenido</th>
-                <th>Información</th>
-                <th>Redes Sociales</th>
-            </tr>
-            <tr>
-                <td style="padding-left: 5%;">
-                    <div>
-                        <ul >
-                            <li style="list-style: none;">
-                                <a href="#" style="text-decoration: none; color: black; font-size: large;">Origen del Bellydance</a>
-                            </li>
-                            <li style="list-style: none;">
-                                <a href="#" style="text-decoration: none; color: black; font-size: large;">Golden Era</a>
-                            </li>
-                            <li style="list-style: none;">
-                                <a href="#" style="text-decoration: none; color: black; font-size: large;">Estilos de Bellydance</a>
-                            </li>
-                        </ul>
-                    </div>
-                </td>
-                <td style=" padding-left: 5.9%;">
-                    <ul >
-                        <li style="list-style: none;">
-                            <a href="#" style="text-decoration: none; color: black; font-size: large;">¿Quién es <span style="color: #1c3394;">'El Rincón de Shaffik'</span>?</a>
+    <footer>
+        <div class="foot">
+            <div class="ft">
+                <div id="t">
+                    <h3>Nuestro Contenido</h3>
+                </div>
+                <div id="t-2">
+                    <h3>Información</h3>
+                </div>
+                <div id="t-3">
+                    <h3>Redes Sociales</h3>
+                </div>
+                <div id="t1">
+                    <ul class="footlist">
+                        <li>
+                            <a href="#" class="a1">Origen del Bellydance</a>
                         </li>
-                        <li style="list-style: none;">
-                            <a href="contact.html" style="text-decoration: none; color: black; font-size: large;">Contacto</a>
+                        <li>
+                            <a href="#" class="a1">Golden Era</a>
                         </li>
-                        <li style="list-style: none;">
-                            <a href="#" style="text-decoration: none; color: black; font-size: large;">Preguntas Frecuentess</a>
+                        <li>
+                            <a href="#" class="a1">Estilos de Bellydance</a>
                         </li>
                     </ul>
-                </td>
-                <td style="width: 33.3%;">
-                    <div>
-                        <table style="border-spacing: 180px 0px;">
-                            <tr>
-                                <td style="width: 100%;">
-                                    <a href="#"><img src="/img/facebook.png" alt="facebook" width="47"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 100%;">
-                                    <a href="#"><img src="/img/instagram.png" alt="instagram" width="50"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 100%; padding-left: 13%;">
-                                    <a href="#"><img src="/img/whatsapp.png" alt="Whatsapp" width="37"></a>
-                                </td>
-                            </tr>
-                        </table>
+                </div>
+                <div id="t4">
+                    <ul class="footlist">
+                        <li>
+                            <a href="#" class="a1">¿Quién es <span id="we">'El Rincón de Shaffik'</span>?</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="a1">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="#" class="a1">Preguntas Frecuentess</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="t2">
+                    <div id="face">
+                        <a href="#"><img src="/img/facebook.png" alt="facebook" width="50"></a>
                     </div>
-                </td>
-            </tr>
-        </table>
-        <table style="margin-top: 2%; width: 96.5%; background-color: #55d5c9;">
-            <tr>
-                <td style="text-align: center;border: 2px dotted  #1c3394;">
-                    <div>
-                        <p>&copy; Paola Medina Fernández 2025</p>
+                    <div id="insta">
+                        <a href="#"><img src="/img/instagram.png" alt="instagram" width="65"></a>
                     </div>
-                </td> 
-            </tr>
-        </table>
+                    <div id="wha">
+                        <a href="#"><img src="/img/whatsapp.png" alt="Whatsapp" width="50"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="t3">
+            <p>&copy; Paola Medina Fernández 2025</p>
+        </div>
     </footer>
 </body>
 </html>

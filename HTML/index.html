@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Rincón de Shaffik</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>El Rincón de Shafik</title>
 </head>
-<body style="padding: 2%; position: relative; background-image: url(/img/fondo3.png); background-repeat: no-repeat; background-size: cover; background-position: center; overflow-x: hidden;">
-    <nav style="margin-bottom: 2.5%; background-color: #55d5c9; border: 2px dotted #1c3394; display: flex; justify-content: space-between; align-items: center;">
-        <div style="flex: 2; margin: 1%;">
+<body>
+    <nav>
+        <div class="img-container">
             <img src="/img/2.png" alt="mono" width="90">
         </div>
-        <div style="flex: 1; display: flex; gap: 5px; justify-content: end; margin-right: 1%;">
-            <button style="width: 25%;height: 30px; background-color: #f5bf57; color: #1c3394; border: #f5bf57;"><a href="index.html" style="text-decoration: none; font-weight: bolder;">Inicio</a></button>
-            <button style="width: 25%;height: 30px; background-color: #f5bf57; color: #1c3394; border: #f5bf57;"><a href="contact.html" style="text-decoration: none; font-weight: bolder;">Contacto</a></button>
-            <button style="width: 25%;height: 30px; background-color: #f5bf57; color: #1c3394; border: #f5bf57;"><a href="login.html" style="text-decoration: none; font-weight: bolder;">Inicio Sesión</a></button>
+        <div class="button-container">
+            <button><a href="index.html">Inicio</a></button>
+            <button><a href="us.html">Nosotros</a></button>
+            <button><a href="contact.html">Contacto</a></button>
+            <button><a href="login.html">Inicio Sesión</a></button>
         </div>
     </nav>
-    <header style="width: 100%; margin-bottom: 2%;">
-        <img src="/img/7YrobQvFFzw8aWsAUtoYXB.png" alt="banner" style="width: 100%;" height="500">
+    <header>        
+        <div class="baner"></div>
     </header>
-    <main style="margin-bottom: 20%; margin-top: 3%;">
-        <div style="display: flex; width: 100%; gap: 2%;">
-            <section style="flex: 1; margin-bottom: 2%;">
+    <main>
+        <div class="middle-body">
+            <section class="secin">
                 <table>
                     <tr>
                         <td>
@@ -35,91 +37,77 @@
                     </tr>
                 </table>
             </section>
-            <aside style="flex: 2; border: 2px dotted  #269998; margin-bottom: 2%; background-color: #77f8eb;">
-                <img src="/img/fonttextup (1).png" alt="Textlogo" width="430" style="padding-left: 20%;">
-                <p style="font-size: x-large; padding: 0 4%; text-align: center;">¡Bienvenid@s al <span style="color: #1c3394;">Rincón de Shaffik</span>!</p>
-                <p style="font-size: x-large; padding: 0 4%; text-align: justify;">En este sitio encontras información sobre el <strong style="color: #269998;">origen de las danzas árabes</strong>,
-                    los <strong style="color: #269998;">tipos de estilos</strong> que existen hasta el momento, también algunos diseñadores de 
-                    vestuarios, nacionales e internacionales, los <strong style="color: #269998;">períodos de tiempos más relevantes</strong> 
+            <aside id="home">
+                <img src="/img/fonttextup (1).png" alt="Textlogo">
+                <p class="p1">¡Bienvenid@s al <span id="wel">Rincón de Shaffik</span>!</p>
+                <p class="p2">En este sitio encontras información sobre el origen de las danzas árabes,
+                    los tipos de estilos que existen hasta el momento, también algunos diseñadores de 
+                    vestuarios, nacionales e internacionales, los períodos de tiempos más relevantes 
                     para el desarrollo de lo que existe hoy en día.
                 </p>
-                <p style="font-size: x-large; padding: 0 4%; text-align: justify;">Además encontrarás los bailarines que son más reconocidos en estos días en
-                    Egipto, nacionales e internacionales, además de las recomendaciones de algunas Academias a nivel nacional.
+                <p class="p2">Además encontrarás los baiarines que son más reconocidos en estos días en
+                    Egipto, nacionales e internacionales.
                 </p>
             </aside>
         </div>
-        <article style="margin-bottom: 26%; width: 100%; margin-top: 1%;">
-            <img src="/img/belly dancers collage_0.jpg" alt="Bellydance paint" style="width: 100%;" height="500">
+        <article>
+            <img src="/img/belly dancers collage_0.jpg" alt="Bellydance paint" height="500">
         </article>
     </main>
-    <footer style="bottom: 2%; position: absolute; width: 100%;">
-        <table style="border: 2px dotted  #1c3394; border-spacing: 10px 5px;background-color: #55d5c9; ">
-            <tr>
-                <th>Nuestro Contenido</th>
-                <th>Información</th>
-                <th>Redes Sociales</th>
-            </tr>
-            <tr>
-                <td style="padding-left: 7%;">
-                    <div>
-                        <ul >
-                            <li style="list-style: none;">
-                                <a href="#" style="text-decoration: none; color: black; font-size: large;">Origen del Bellydance</a>
-                            </li>
-                            <li style="list-style: none;">
-                                <a href="#" style="text-decoration: none; color: black; font-size: large;">Golden Era</a>
-                            </li>
-                            <li style="list-style: none;">
-                                <a href="#" style="text-decoration: none; color: black; font-size: large;">Estilos de Bellydance</a>
-                            </li>
-                        </ul>
-                    </div>
-                </td>
-                <td style=" padding-left: 5.9%;">
-                    <ul >
-                        <li style="list-style: none;">
-                            <a href="#" style="text-decoration: none; color: black; font-size: large;">¿Quién es <span style="color: #1c3394;">'El Rincón de Shaffik'</span>?</a>
+    <footer>
+        <div class="foot">
+            <div class="ft">
+                <div id="t">
+                    <h3>Nuestro Contenido</h3>
+                </div>
+                <div id="t-2">
+                    <h3>Información</h3>
+                </div>
+                <div id="t-3">
+                    <h3>Redes Sociales</h3>
+                </div>
+                <div id="t1">
+                    <ul class="footlist">
+                        <li>
+                            <a href="#" class="a1">Origen del Bellydance</a>
                         </li>
-                        <li style="list-style: none;">
-                            <a href="contact.html" style="text-decoration: none; color: black; font-size: large;">Contacto</a>
+                        <li>
+                            <a href="#" class="a1">Golden Era</a>
                         </li>
-                        <li style="list-style: none;">
-                            <a href="#" style="text-decoration: none; color: black; font-size: large;">Preguntas Frecuentess</a>
+                        <li>
+                            <a href="#" class="a1">Estilos de Bellydance</a>
                         </li>
                     </ul>
-                </td>
-                <td style="width: 33.3%;">
-                    <div>
-                        <table style="border-spacing: 180px 0px;">
-                            <tr>
-                                <td style="width: 100%;">
-                                    <a href="#"><img src="/img/facebook.png" alt="facebook" width="47"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 100%;">
-                                    <a href="#"><img src="/img/instagram.png" alt="instagram" width="50"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 100%; padding-left: 13%;">
-                                    <a href="#"><img src="/img/whatsapp.png" alt="Whatsapp" width="37"></a>
-                                </td>
-                            </tr>
-                        </table>
+                </div>
+                <div id="t4">
+                    <ul class="footlist">
+                        <li>
+                            <a href="#" class="a1">¿Quién es <span id="we">'El Rincón de Shaffik'</span>?</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="a1">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="#" class="a1">Preguntas Frecuentess</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="t2">
+                    <div id="face">
+                        <a href="#"><img src="/img/facebook.png" alt="facebook" width="50"></a>
                     </div>
-                </td>
-            </tr>
-        </table>
-        <table style="margin-top: 2%; width: 96.5%; background-color: #55d5c9;">
-            <tr>
-                <td style="text-align: center;border: 2px dotted  #1c3394;">
-                    <div>
-                        <p>&copy; Paola Medina Fernández 2025</p>
+                    <div id="insta">
+                        <a href="#"><img src="/img/instagram.png" alt="instagram" width="65"></a>
                     </div>
-                </td> 
-            </tr>
-        </table>
+                    <div id="wha">
+                        <a href="#"><img src="/img/whatsapp.png" alt="Whatsapp" width="50"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="t3">
+            <p>&copy; Paola Medina Fernández 2025</p>
+        </div>
     </footer>
 </body>
 </html>
