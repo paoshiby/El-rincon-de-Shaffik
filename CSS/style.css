@@ -78,7 +78,6 @@ header> img{
 }
 main{
     margin-bottom: 2%; 
-    margin-top: 5%;
     grid-area: main;
 }
 footer{
