@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 400px;
 }
 .baner> img{
     opacity: 0%;
@@ -14,26 +15,26 @@
     gap: 2%; 
     justify-content: space-between;
 }
-section{
+.secin{
     flex: 1; 
     margin-bottom: 2%;
 }
 aside{
     flex: 2; 
-    margin-bottom: 5%; 
+    margin-bottom: 2%; 
     background-color: #55d5c8;
 }
 #home{
     border: 2px dotted  #269998; 
 }
-aside> img{
+#home> img{
     padding-left: 15%;
     width: 76%;
 }
-aside> p{
-    font-size: large; 
+#home> p{
     padding: 0 4%;
-    font-family: var(--fuente-uno);
+    font-family: var(--fuente-once);
+    font-size: 28.5px;
 }
 .p1{
     text-align: center;
@@ -41,7 +42,7 @@ aside> p{
 .p2{
     text-align: justify;
 }
-span{
+#wel{
     color: #1c3394;
     font-weight: bolder;
     font-size: 25px;

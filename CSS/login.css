@@ -4,6 +4,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 400px;
 }
 .banner> img{
     opacity: 0%;
@@ -102,21 +103,22 @@
     font-size: 50px;
 }
 #artlog> p{
-    font-size: large; 
     padding: 0 4%; 
     text-align: justify;
-    font-size: larger;
+    font-size: 23px;
+    font-family: var(--fuente-once);
 }
 #artlog> p > strong{
     color: #1c3394;
+    font-family: var(--fuente-once);
+    font-size: 23px;
 }
 #shars{
-    font-family: var(--fuente-siete);
     font-size: 25px;
 }
 #artlog> ul> li{
-    
-    font-size: larger;
+    font-family: var(--fuente-once);
+    font-size: 23px;
 }
 #testo{
     font-family: var(--fuente-uno);
@@ -124,4 +126,6 @@
 }
 #artlog> ul> li > strong{
     color: #1c3394;
+    font-family: var(--fuente-once);
+    font-size: 23px;
 }

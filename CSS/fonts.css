@@ -43,6 +43,15 @@
         url('/fonts/WorldDiscoverySix_PERSONAL_USE_ONLY.otf') format('opentype'),
         url('/fonts/WorldDiscoverySwash_PERSONAL_USE_ONLY.otf') format('opentype');
 }
+@font-face {
+    font-family: 'Photoshoot';
+    src: url('/fonts/Photoshoot-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OnlyGirl';
+    src: url('/fonts/KGOnlyGirlInTheWorld.otf') format('opentype'),
+        url('/fonts/KGOnlyGirlInTheWorld.ttf') format('truetype');
+}
 :root{
     --fuente-uno: 'Adelia';
     --fuente-dos: 'Better_together';
@@ -53,4 +62,6 @@
     --fuente-siete: 'RamadhanMubarok';
     --fuente-ocho: 'Ramadhan';
     --fuente-nine:'WolrdDiscovery';
+    --fiuente-ten: 'Photoshoot';
+    --fuente-once: 'OnlyGirl';
 }

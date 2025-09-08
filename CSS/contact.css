@@ -4,6 +4,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 400px;
 }
 .Baner> img{
     opacity: 0%;
