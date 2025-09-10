@@ -133,38 +133,75 @@
     border: 2px dotted  #269998;
     width: 400px;
     border-radius: 15% 15%;
+    padding: 4%;
+    text-align: justify;
 }
 .mid> p{
-    padding: 0 4%;
     font-family: var(--fuente-once);
     font-size: 28.5px;
 }
-#home{
-    flex: 1; 
+.subject{
+    display: flex;
+    gap: 2%;
+    position: relative;
+}
+#vid{
+    flex: 1;
+}
+.obj{
+    flex: 2; 
     margin-bottom: 2%; 
-}
-#home> img{
     width: 100%;
-    height: 400px;
+    height: 415px;
+    border-radius: 24px 24px;
+    transition: transform 0.3s ease-in-out;
+    top: 0;
+    left: 0;
+    position: relative;
 }
-#home > figcaption{
+.oj{
+    background-color: #1c3394;
+    filter: opacity(80%);
+    width: 100%;
+    height: 415px;
+    border-radius: 24px 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Pone esta capa encima del fondo */
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#sam{
+    width: 20%;
+    height: 170px;
+    object-fit: contain;
+}
+.content > p{
     text-align: center;
     color: #f5bf57;
     font-size: 30px;
     font-family: var(--fuente-seis);
+    text-align: justify;
 }
-#home > img, figcaption{
-    transition: transform 0.3s ease-in-out;
-}
-#home > #im:hover{
-    transform: scale(0.9);
-}
-
-#home > #sam:hover{
-    transform: scale(1.2);
+.obj:hover, .oj:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(34, 220, 233, 0.856),
+                0px 0px 40px rgba(34, 220, 233, 0.856);
 } 
 article{
-    margin-bottom: 5%; 
+    margin-bottom: 3%; 
     width: 100%; 
     margin-top: 5%;
     display: flex;
