@@ -1,10 +1,12 @@
 @import url('/CSS/fonts.css');
 .banner{
-    background-image: url(/img/petra.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 400px;
+	background-image: url(/img/petra.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 400px;
+	filter: blur(2px);
+	border-radius: 50px 50px;
 }
 .banner> img{
     opacity: 0%;
