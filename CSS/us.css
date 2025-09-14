@@ -73,12 +73,13 @@
     background-color: #55d5c9; 
     border: 2px dotted #1c3394; 
     height: 150px;
+    margin: 5% 0% 5% 0%;
 }
 .icons{
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
     grid-template-rows: 50px;
-    column-gap: 63.2%;
+    column-gap: 20%;
     padding-inline-start: 60px;
 }
 .icons> .item-a> img{
