@@ -1,13 +1,12 @@
 @import url('/CSS/fonts.css');
 .Banner{
     background-image: url(/img/wadirum.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 500px;
-}
-.Banner> img{
-    opacity: 0%;
+    height: 400px;
+    filter: blur(5px);
+    border-radius: 50px 50px;
 }
 .middle{
     display: flex; 
@@ -79,7 +78,7 @@
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
     grid-template-rows: 50px;
-    column-gap: 20%;
+    column-gap: 63.2%;
     padding-inline-start: 60px;
 }
 .icons> .item-a> img{

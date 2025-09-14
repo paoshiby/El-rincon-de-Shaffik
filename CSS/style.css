@@ -109,6 +109,116 @@ header{
     height: 400px;
     position: relative;
 }
+/*Texto animado banner*/
+.wave-text{
+    padding: 5% 0% 0% 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #5c7ce4;
+    text-shadow: 0px 0px 5px #1c3394,
+                0px 0px 10px #132470;
+}
+.wa-text{
+    padding: 0% 0% 0% 48%;
+    position: absolute;
+    top: 38%;
+    left: 0;
+    width: 100%;
+    color: #5c7ce4;
+    text-shadow: 0px 0px 5px #1c3394,
+                0px 0px 10px #132470;
+}
+.wav-text{
+    padding: 0% 0% 0% 30%;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    color: #5c7ce4;
+    text-shadow: 0px 0px 5px #1c3394,
+                0px 0px 10px #132470;
+}
+.wave-text .wel, .wav-text .wel, .wa-text .wel {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text .wel:nth-child(1), .wav-text .wel:nth-child(1), .wav-text .wel:nth-child(1){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(2), .wav-text .wel:nth-child(2), .wav-text .wel:nth-child(2){
+    animation-delay: 0.2s;
+}
+.wave-text .wel:nth-child(3),.wav-text .wel:nth-child(3), .wav-text .wel:nth-child(3){
+    animation-delay: 0.4s;
+}
+.wave-text .wel:nth-child(4), .wav-text .wel:nth-child(4), .wav-text .wel:nth-child(4){
+    animation-delay: 0.6s;
+}
+.wave-text .wel:nth-child(5), .wav-text .wel:nth-child(5), .wav-text .wel:nth-child(5){
+    animation-delay: 0.8s;
+}
+.wave-text .wel:nth-child(6), .wav-text .wel:nth-child(6), .wav-text .wel:nth-child(6){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(7), .wav-text .wel:nth-child(7), .wav-text .wel:nth-child(7){
+    animation-delay: 0.2s;
+}
+.wave-text .wel:nth-child(8), .wav-text .wel:nth-child(8), .wav-text .wel:nth-child(8){
+    animation-delay: 0.4s;
+}
+.wave-text .wel:nth-child(9), .wav-text .wel:nth-child(9), .wav-text .wel:nth-child(9){
+    animation-delay: 0.6s;
+}
+.wave-text .wel:nth-child(10), .wav-text .wel:nth-child(10){
+    animation-delay: 0.8s;
+}
+.wave-text .wel:nth-child(11), .wav-text .wel:nth-child(11){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(12), .wav-text .wel:nth-child(12){
+    animation-delay: 0.2s;
+}
+.wave-text .wel:nth-child(13), .wav-text .wel:nth-child(13){
+    animation-delay: 0.8s;
+}
+.wave-text .wel:nth-child(14), .wav-text .wel:nth-child(14){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(15), .wav-text .wel:nth-child(15){
+    animation-delay: 0.2s;
+}
+.wave-text .wel:nth-child(16), .wav-text .wel:nth-child(16){
+    animation-delay: 0.8s;
+}
+.wave-text .wel:nth-child(17), .wav-text .wel:nth-child(17){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(18), .wav-text .wel:nth-child(18){
+    animation-delay: 0.2s;
+}.wave-text .wel:nth-child(19), .wav-text .wel:nth-child(19){
+    animation-delay: 0.2s;
+}
+.wave-text .wel:nth-child(20), .wav-text .wel:nth-child(20){
+    animation-delay: 0.8s;
+}
+.wave-text .wel:nth-child(21), .wav-text .wel:nth-child(21){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(22), .wav-text .wel:nth-child(22){
+    animation-delay: 0.2s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
 main{
     margin-bottom: 2%; 
     grid-area: main;
@@ -138,6 +248,7 @@ footer{
     grid-template-rows: auto auto auto;
     place-items: center;
 }
+/*Títulos cplumnas*/
 #t{
     grid-column: 1;
     grid-row: 1;
@@ -156,6 +267,7 @@ footer{
 #t h1, #t-2 h1, #t-3 h1{
     font-size: 25px;
 }
+/*columna 'Nuesto contenido' e 'Información'*/
 #t1{
     width: 100%;
     grid-row: 2;
@@ -165,6 +277,24 @@ footer{
     grid-row: 2;
     grid-column: 2;
 }
+.footlist> li{
+    list-style: none;
+    line-height: 30px;
+    padding-left: 20%;
+}
+a{
+    text-decoration: none;     
+}
+.a1{ 
+    color: #00ffe5;
+    font-size: 22px;
+}
+a> #we{
+    color: #f5bf57;
+    font-family: var(--fuente-tres);
+    font-size: x-large;
+}
+/*Iconos y animación*/
 #t2{
     border-spacing: 180px 0px;
     grid-row: 2;
@@ -201,6 +331,15 @@ footer{
 #wha img:hover{
     border-radius: 100% 100%;
 }
+/*Créditos Página*/
+.fit{
+    width: 100%;
+    height: 100px;
+    background-color: #1c3394;
+    margin-top: 2%; 
+    border: 2px dotted  #1c3394;
+    filter: opacity(50%);
+}
 #t3{
     grid-column: 1 / span 3;
     grid-row: 3;
@@ -212,28 +351,6 @@ footer{
     bottom: 0; 
     color: #00ffe5;
 }
-.footlist> li{
-    list-style: none;
-    line-height: 30px;
-    padding-left: 20%;
-}
-a{
-    text-decoration: none;     
-}
-.a1{ 
-    color: #00ffe5;
-    font-size: 22px;
-}
-a> #we{
-    color: #f5bf57;
-    font-family: var(--fuente-tres);
-    font-size: x-large;
-}
-.fit{
-    width: 100%;
-    height: 100px;
-    background-color: #1c3394;
-    margin-top: 2%; 
-    border: 2px dotted  #1c3394;
-    filter: opacity(50%);
+#t3> p{
+    font-size: large;
 }
