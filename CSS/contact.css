@@ -1,0 +1,71 @@
+@import url('/CSS/fonts.css');
+.Baner{
+    background-image: url(/img/Pyramid\ of\ Giza\ .jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    filter: blur(3px);
+    border-radius: 50px 50px;
+}
+.back{
+    width: 50%;
+    background:rgba(67, 211, 221, 0.8);
+    margin-left: 28%;
+}
+legend{
+    text-align: center; 
+    font-size: xx-large; 
+    padding-bottom: 2%;
+    color: #1c3394;
+}
+.formu{
+    border-spacing: 30px 20px; 
+}
+.t1{ 
+    color: #1c3394;
+}
+.t1> label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.inputs{
+    height: 20px; 
+    background-color:#ecc06eb3; 
+    border: 1px #ecc06eb3; 
+    color: #1c3394;
+    font-size: larger;
+}
+#contname{
+    width: 48%;
+}
+#mail , #sub{
+    width: 97%;
+}
+#contphone{
+    width: 84%;
+}
+.codearea{
+    width: 13%;
+}
+#mess{
+    padding-bottom: 52%;
+}
+#message{
+    background-color:#ecc06eb3; 
+    border: 1px #ecc06eb3;
+    color: #1c3394;
+    font-size: large;
+}
+#boton{
+    text-align: right;
+}
+.boton{
+    width: 20%; 
+    height: 30px; 
+    background-color: #f5bf57; 
+    color: #1c3394; 
+    border: 2px #ecbf6e; 
+    font-weight: bolder;
+    margin-right: 3%;
+}
