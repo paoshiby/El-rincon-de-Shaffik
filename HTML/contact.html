@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <title>El Rincón de Shafik</title>
     <link rel="shortcut icon" href="/img/logo1.png" type="image/x-pnj">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     <nav>
@@ -77,61 +78,65 @@
     </header>
     <main class="back">
         <legend>Formulario de Contacto</legend>
-        <div>
-            <table class="formu">
+        <div class="table-responsive">
+            <table class="formu table table-hover">
                 <form>
-                    <tr>
-                        <td class="t1">
-                            <label for="contname">Nombres:</label>
-                        </td>
-                        <td >
-                            <input class="inputs" type="text" id="contname" name="contname" placeholder="Nombres">
-                            <input class="inputs" type="text" id="contname" name="contlastname" placeholder="Apellidos">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="t1">
-                            <label for="mail">Email:</label>
-                        </td>
-                        <td >
-                            <input class="inputs" type="email" id="mail" name="mail" placeholder="example@gmail.com">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="t1">
-                            <label for="contphone">Teléfono:</label>
-                        </td>
-                        <td>
-                            <input class="codearea inputs" type="text" value="+569" readonly>
-                            <input class="inputs" type="tel" id="contphone" name="contphone"placeholder="12345678">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="t1">
-                            <label for="subject">Asunto:</label>
-                        </td>
-                        <td>
-                            <select class="inputs" name="subject" id="sub">
-                                <option class="inputs" value="1">Otro</option>
-                                <option class="inputs" value="2">Información sobre academias en Chile</option>
-                                <option class="inputs" value="3">Información de diseñadores de vestuarios</option>
-                                <option class="inputs" value="4">Mayor información sobre la Golden Era</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="t1" id="mess">
-                            <label for="message">Mensaje:</label>
-                        </td>
-                        <td>
-                            <textarea name="message" id="message" rows="15" cols="51"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="boton" colspan="2">
-                            <input class="boton" type="submit" value="Enviar">
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td class="t1">
+                                <label for="contname">Nombres:</label>
+                            </td>
+                            <td >
+                                <input class="inputs" type="text" id="contname" name="contname" placeholder="Nombres">
+                                <input class="inputs" type="text" id="contname" name="contlastname" placeholder="Apellidos">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t1">
+                                <label for="mail">Email:</label>
+                            </td>
+                            <td >
+                                <input class="inputs" type="email" id="mail" name="mail" placeholder="example@gmail.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t1">
+                                <label for="contphone">Teléfono:</label>
+                            </td>
+                            <td>
+                                <input class="codearea inputs" type="text" value="+569" readonly>
+                                <input class="inputs" type="tel" id="contphone" name="contphone"placeholder="12345678">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t1">
+                                <label for="subject">Asunto:</label>
+                            </td>
+                            <td>
+                                <select class="inputs" name="subject" id="sub">
+                                    <option class="inputs" value="1">Otro</option>
+                                    <option class="inputs" value="2">Información sobre academias en Chile</option>
+                                    <option class="inputs" value="3">Información de diseñadores de vestuarios</option>
+                                    <option class="inputs" value="4">Mayor información sobre la Golden Era</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="t1" id="mess">
+                                <label for="message">Mensaje:</label>
+                            </td>
+                            <td>
+                                <textarea name="message" id="message" rows="15" cols="51"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td id="boton" colspan="2">
+                                <input class="boton" type="submit" value="Enviar">
+                            </td>
+                        </tr>
+                    </tfoot>
                 </form>
             </table>
         </div>
@@ -236,5 +241,6 @@
             <p>&copy; Paola Medina Fernández 2025</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

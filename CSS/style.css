@@ -28,9 +28,6 @@ body{
 }
 nav{
     position: relative; 
-    width: 100%;
-    height: 100px;
-    margin-bottom: 5%; 
     grid-area: nav;
 }
 
@@ -103,11 +100,7 @@ button{
     color: #2633eb; 
 }
 header{
-    width: 100%; 
-    margin-bottom: 5%;
     grid-area: header;
-    height: 400px;
-    position: relative;
 }
 /*Texto animado banner*/
 .wave-text{
