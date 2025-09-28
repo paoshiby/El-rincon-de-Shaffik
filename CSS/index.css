@@ -1,14 +1,4 @@
 @import url('/CSS/fonts.css');
-/*header*/
-.baner{
-    background-image: url(/img/piramids.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 400px;
-    filter: blur(5px);
-    border-radius: 50px 50px;
-}
 /*Video, texto de presentación e imagen*/
 .middle-body{
     display: flex; 
