@@ -23,27 +23,12 @@ body{
     background-color: var(--color-back);
     backdrop-filter: blur(5px);
 }
-#blo a {
-    text-decoration: none;
-    font-weight: bold;
-    background-color: var(--color-ocho); 
-    color: var(--color-tres); 
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-#blo a:hover {
-    text-shadow: 0px 0px 5px #f9fbfc,
-                0px 0px 10px #40d7f1,
-                0px 0px 16px #40d7f1;
-    color: var(--color-siete);
-    transform: scale(1.1);
-}
 .navbar-collapse #leter,
-.button-container #blo a {
+.button-container .bn #blo{
     color: var(--color-tres);
     font-weight: bold;
     font-size: larger;
 }
-
 /* Color para el estado 'activo' del enlace */
 .navbar-collapse .nav-link.active {
     color: var(--color-tres);
@@ -51,8 +36,7 @@ body{
                 0px 0px 10px #40d7f1,
                 0px 0px 16px #40d7f1;
 }
-.navbar-collapse .nav-link:hover,
-.button-container #blo a:hover {
+.navbar-collapse .nav-link:hover{
     color: var(--color-siete);
     transform: scale(1.1);
     box-shadow: none;
@@ -76,24 +60,23 @@ body{
 nav> .navbar-collapse> .nav{
     transition: transform 0.3s ease-in-out;
 }
-#bin>a:hover, 
-#bus>a:hover, 
-#bco>a:hover, 
-#blo>a:hover{
+#bin> #leter:hover, 
+#bus> #leter:hover, 
+#bco> #leter:hover, 
+#blo> #leter:hover{
     text-shadow: 0px 0px 5px #f9fbfc,
                 0px 0px 10px #40d7f1,
                 0px 0px 16px #40d7f1;
 }
-#bin>a, 
-#bus>a, 
-#bco>a, 
-#blo>a{
+#bin> #leter, 
+#bus>#leter, 
+#bco> #leter, 
+#blo> #leter{
     text-decoration: none; 
     font-weight: bold;
-    color: #2633eb; 
+    color: var(--color-cuatro); 
 }
 .carousel {
-    position: initial !important; /* Esto anulará cualquier posición anterior */
     width: 100vw;
     height: 100vh;
     overflow: hidden;
