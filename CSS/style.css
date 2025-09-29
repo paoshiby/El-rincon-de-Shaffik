@@ -91,7 +91,7 @@ nav> .navbar-collapse> .nav{
 }
 .carousel-control-prev,
 .carousel-control-next {
-    top: 19%;
+    top: 50%;
     transform: translateY(-50%);
 }
 .fot{
@@ -117,4 +117,9 @@ nav> .navbar-collapse> .nav{
 #face, #inst, #wha {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     color: #f5bf57;
+}
+.cred{
+    color: var(--color-cuatro);
+    font-weight: bold;
+    font-size: larger;
 }
