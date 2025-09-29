@@ -42,7 +42,7 @@
             </div>
         </nav>
     </div>
-    <div class="carousel slide carousel-fade ms-0" id="mCarrusel">
+    <div class="carousel slide carousel-fade" id="mCarrusel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="/img/7YrobQvFFzw8aWsAUtoYXB.png" alt="Piramides">
@@ -64,7 +64,7 @@
         </button>
     </div>
     <main>
-        <div class="animated-text-container">
+        <div class="animated-text-container my-5">
             <h1 class="wave-text">
                 <span class="wel">¡</span>
                 <span class="wel">B</span>
@@ -141,9 +141,9 @@
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/img/Romantic_dinner_in_Egypt_.jfif');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Secretos del Nilo...</h3>
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" id="tto">Secretos del Nilo...</h3>
                             <small class="pt-5 mt-2 mb-4 display-6 lh-1 fw-bold">
-                                <button type="button" class=" btn text-light" data-bs-toggle="modal" data-bs-target="#egiptoModal">Ver más...</button>
+                                <button type="button" class=" btn" id="tite" data-bs-toggle="modal" data-bs-target="#egiptoModal">Ver más...</button>
                             </small>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
@@ -151,7 +151,7 @@
                                 </li>
                                 <li class="d-flex align-items-center me-3">
                                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                                    <small>Egipto</small>
+                                    <small id="tt">Egipto</small>
                                 </li>
                             </ul>
                         </div>
@@ -160,9 +160,9 @@
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/img/Byblos_lebanons.jfif');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">La Elegancia de Byblos...</h3>
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" id="tto">La Elegancia de Byblos...</h3>
                             <small class="pt-5 mt-2 mb-4 display-6 lh-1 fw-bold ">
-                                <a href="#" class="text-light" data-bs-toggle="modal" data-bs-target="#libanoModal">Ver más...</a>
+                                <button type="button" class=" btn " id="tite" data-bs-toggle="modal" data-bs-target="#libanoModal">Ver más...</button>
                             </small>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
@@ -170,7 +170,7 @@
                                 </li>
                                 <li class="d-flex align-items-center me-3">
                                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                                    <small>El Líbano</small>
+                                    <small id="tt">El Líbano</small>
                                 </li>
                             </ul>
                         </div>
@@ -179,9 +179,9 @@
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('/img/turquia.jfif');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-2 display-6 lh-1 fw-bold">Estambul en Movimiento...</h3>
-                            <small class="pt-5 mt-2 mb-4 display-6 lh-1 fw-bold btn ">
-                                <a href="#" class="text-light" data-bs-toggle="modal" data-bs-target="#turquiaModal">Ver más...</a>
+                            <h3 class="pt-5 mt-5 mb-2 display-6 lh-1 fw-bold" id="tto">Estambul en Movimiento...</h3>
+                            <small class="pt-5 mt-4 mb-4 display-6 lh-1 fw-bold">
+                                <button type="button" class=" btn" id="tite" data-bs-toggle="modal" data-bs-target="#turquiaModal">Ver más...</button>
                             </small>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
@@ -189,7 +189,7 @@
                                 </li>
                                 <li class="d-flex align-items-center me-3">
                                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                                    <small>Turquía</small>
+                                    <small id="tt">Turquía</small>
                                 </li>
                             </ul>
                         </div>
@@ -219,49 +219,46 @@
         </footer>
     </div>
     <div class="modal fade" id="egiptoModal" tabindex="-1" aria-labelledby="egiptoModalLabel" aria-hidden="true" style="width: 100vw; height: 100vh;">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="background-image: url('/img/Romantic_dinner_in_Egypt_.jfif'); background-size: cover; background-position: center; color: white;">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content modal-egipto">
                 <div class="modal-header" style="border-bottom: none;">
                     <h5 class="modal-title" id="egiptoModalLabel">Secretos del Nilo</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Descubre los misterios de la antigua danza egipcia y cómo los movimientos ancestrales han evolucionado para convertirse en el estilo vibrante y expresivo que conocemos hoy. Desde las tumbas faraónicas hasta los escenarios modernos, la danza es el corazón de la cultura egipcia.</p>
+                    <p class="par">Descubre los misterios de la antigua danza egipcia y cómo los movimientos ancestrales han evolucionado para convertirse en el estilo vibrante y expresivo que conocemos hoy. Desde las tumbas faraónicas hasta los escenarios modernos, la danza es el corazón de la cultura egipcia.</p>
                 </div>
                 <div class="modal-footer" style="border-top: none;">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn" id="buut" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="modal fade" id="libanoModal" tabindex="-1" aria-labelledby="libanoModalLabel" aria-hidden="true" style="width: 100vw; height: 100vh;">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="background-image: url('/img/Byblos_lebanons.jfif'); background-size: cover; background-position: center; color: white;">
+            <div class="modal-content" id="modal-libano">
                 <div class="modal-header" style="border-bottom: none;">
-                    <h5 class="modal-title" id="libanoModalLabel">La Elegancia de Byblos</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title display-4" id="libanoModalLabel">La Elegancia de Byblos</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Adéntrate en la historia de la danza libanesa, un arte que combina la gracia del ballet con la pasión de los movimientos folclóricos. Aprende sobre el Dabke, la danza tradicional que une a la gente en celebraciones, y cómo la música libanesa ha influido en la danza del Medio Oriente.</p>
+                    <p class="par">Adéntrate en la historia de la danza libanesa, un arte que combina la gracia del ballet con la pasión de los movimientos folclóricos. Aprende sobre el Dabke, la danza tradicional que une a la gente en celebraciones, y cómo la música libanesa ha influido en la danza del Medio Oriente.</p>
                 </div>
                 <div class="modal-footer" style="border-top: none;">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn" id="buut" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="modal fade" id="turquiaModal" tabindex="-1" aria-labelledby="turquiaModalLabel" aria-hidden="true" style="width: 100vw; height: 100vh;">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="background-image: url('/img/turquia.jfif'); background-size: cover; background-position: center; color: white;">
+            <div class="modal-content modal-turquia">
                 <div class="modal-header" style="border-bottom: none;">
-                <h5 class="modal-title" id="turquiaModalLabel">Estambul en Movimiento</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title display-4" id="turquiaModalLabel">Estambul en Movimiento</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Explora la rica tradición de la danza turca, una mezcla fascinante de influencias otomanas y del Medio Oriente. Desde las animadas danzas gitanas hasta los elegantes giros de la danza sufi, sumérgete en una cultura donde la música y el movimiento cuentan historias de siglos de antigüedad.</p>
+                    <p class="par">Explora la rica tradición de la danza turca, una mezcla fascinante de influencias otomanas y del Medio Oriente. Desde las animadas danzas gitanas hasta los elegantes giros de la danza sufi, sumérgete en una cultura donde la música y el movimiento cuentan historias de siglos de antigüedad.</p>
                 </div>
                 <div class="modal-footer" style="border-top: none;">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn" id="buut" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>

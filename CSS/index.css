@@ -114,3 +114,52 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+#tite{
+    color: #05ffde;
+    font-weight: bold;
+}
+#tite:hover{
+    color: var(--color-siete);
+    background-color: var(--color-back);
+}
+#buut{ 
+    color: var(--color-tres); 
+    border: 2px #ecbf6e; 
+    font-weight: bolder;
+}
+#buut:hover{
+    color: var(--color-siete);
+}
+#tto{
+    color: var(--color-siete);
+    font-weight: bold;
+}
+#tt{
+    color: var(--color-siete);
+    font-weight: bold;
+}
+.modal-egipto {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/Romantic_dinner_in_Egypt_.jfif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+#modal-libano {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/Byblos_lebanons.jfif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.modal-turquia {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/turquia.jfif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+#turquiaModalLabel, #libanoModalLabel, #egiptoModalLabel{
+    color: var(--color-siete);
+}
+.par{
+    color: var(--color-siete);
+    font-size: large;
+}
