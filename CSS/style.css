@@ -16,7 +16,6 @@ body{
     background-size: cover; 
     background-position: center; 
     background-attachment: fixed; 
-    overflow-x: hidden;
     backdrop-filter: blur(2px);
 }
 .bckgd{
