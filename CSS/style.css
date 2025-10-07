@@ -49,7 +49,7 @@ body{
     outline: none;
 }
 @media (max-width: 900px) {
-  .navbar-collapse> .navbar-nav {
+  .navbar-collapse> .nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;

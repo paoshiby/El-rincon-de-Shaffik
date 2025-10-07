@@ -1,3 +1,478 @@
+@font-face {
+  font-family: "Adelia";
+  src: url("/fonts/adelia.otf") format("opentype"), url("/fonts/adelia.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Better_together";
+  src: url("/fonts/Better Together.otf") format("opentype"), url("/fonts/Better Together.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Furqan";
+  src: url("/fonts/Furqan.otf") format("opentype"), url("/fonts/Furqan.ttf") format("truetype"), url("/fonts/Furqan.woff") format("woff");
+}
+@font-face {
+  font-family: "Kahfee";
+  src: url("/fonts/Kahfee.otf") format("opentype");
+}
+@font-face {
+  font-family: "Michland";
+  src: url("/fonts/Michland Script.otf") format("opentype");
+}
+@font-face {
+  font-family: "Persian";
+  src: url("/fonts/Persian Personal Used.otf") format("opentype");
+}
+@font-face {
+  font-family: "RamadhanMubarok";
+  src: url("/fonts/RamadhanMubarok-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Ramadhan";
+  src: url("/fonts/Special Ramadhan (DEMO).otf") format("opentype");
+}
+@font-face {
+  font-family: "WorldDiscovery";
+  src: url("/fonts/WorldDiscoveryTwo_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoveryThree_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoveryFour_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoveryFive_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoverySix_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoverySwash_PERSONAL_USE_ONLY.otf") format("opentype");
+}
+@font-face {
+  font-family: "Photoshoot";
+  src: url("/fonts/Photoshoot-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OnlyGirl";
+  src: url("/fonts/KGOnlyGirlInTheWorld.otf") format("opentype"), url("/fonts/KGOnlyGirlInTheWorld.ttf") format("truetype");
+}
+:root {
+  --fuente-uno: "Adelia";
+  --fuente-dos: "Better_together";
+  --fuente-tres: "Furqan";
+  --fuente-cuatro:"Kahfee";
+  --fuente-cinco: "Michland";
+  --fuente-seis: "Persian";
+  --fuente-siete: "RamadhanMubarok";
+  --fuente-ocho: "Ramadhan";
+  --fuente-nine:"WolrdDiscovery";
+  --fiuente-ten: "Photoshoot";
+  --fuente-once: "OnlyGirl";
+}
+
+/*
+----------------------------SASS-----------------------------
+*/
+/*
+----------------------------CSS------------------------------
+*/
+:root {
+  --color-uno: #1c3394;
+  --color-dos: #355fe4;
+  --color-tres: #f5bf57;
+  --color-cuatro: #ecbf6e;
+  --color-cinco: #269998;
+  --color-seis: #55d5c9;
+  --color-back: rgba(28, 51, 148, 0.5);
+  --color-siete: rgba(85, 213, 201);
+  --color-ocho: rgba(49, 132, 187, 0.5);
+}
+
+.animated-text-container {
+  text-align: center;
+  padding: 5% 0%;
+}
+.animated-text-container .wave-text,
+.animated-text-container .wa-text,
+.animated-text-container .wav-text {
+  width: 100%;
+  color: var(--color-cuatro);
+  text-shadow: 0px 0px 2px var(--color-dos), 0px 0px 8px var(--color-dos);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+.animated-text-container .wave-text .wel,
+.animated-text-container .wav-text .wel,
+.animated-text-container .wa-text .wel {
+  display: inline-block;
+  font-size: 4rem;
+  animation: wave 2s ease-in-out infinite;
+}
+.animated-text-container .wave-text .wel:nth-child(1),
+.animated-text-container .wav-text .wel:nth-child(1),
+.animated-text-container .wa-text .wel:nth-child(1) {
+  animation-delay: 0s;
+}
+.animated-text-container .wave-text .wel:nth-child(2),
+.animated-text-container .wav-text .wel:nth-child(2),
+.animated-text-container .wa-text .wel:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.animated-text-container .wave-text .wel:nth-child(3),
+.animated-text-container .wav-text .wel:nth-child(3),
+.animated-text-container .wa-text .wel:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.animated-text-container .wave-text .wel:nth-child(4),
+.animated-text-container .wav-text .wel:nth-child(4),
+.animated-text-container .wa-text .wel:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.animated-text-container .wave-text .wel:nth-child(5),
+.animated-text-container .wav-text .wel:nth-child(5),
+.animated-text-container .wa-text .wel:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.animated-text-container .wave-text .wel:nth-child(6),
+.animated-text-container .wav-text .wel:nth-child(6),
+.animated-text-container .wa-text .wel:nth-child(6) {
+  animation-delay: 0s;
+}
+.animated-text-container .wave-text .wel:nth-child(7),
+.animated-text-container .wav-text .wel:nth-child(7),
+.animated-text-container .wa-text .wel:nth-child(7) {
+  animation-delay: 0.2s;
+}
+.animated-text-container .wave-text .wel:nth-child(8),
+.animated-text-container .wav-text .wel:nth-child(8),
+.animated-text-container .wa-text .wel:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.animated-text-container .wave-text .wel:nth-child(9),
+.animated-text-container .wav-text .wel:nth-child(9),
+.animated-text-container .wa-text .wel:nth-child(9) {
+  animation-delay: 0.6s;
+}
+.animated-text-container .wave-text .wel:nth-child(10),
+.animated-text-container .wav-text .wel:nth-child(10),
+.animated-text-container .wa-text .wel:nth-child(10) {
+  animation-delay: 0.8s;
+}
+.animated-text-container .wave-text .wel:nth-child(11),
+.animated-text-container .wav-text .wel:nth-child(11),
+.animated-text-container .wa-text .wel:nth-child(11) {
+  animation-delay: 0s;
+}
+.animated-text-container .wave-text .wel:nth-child(12),
+.animated-text-container .wav-text .wel:nth-child(12),
+.animated-text-container .wa-text .wel:nth-child(12) {
+  animation-delay: 0.2s;
+}
+.animated-text-container .wave-text .wel:nth-child(13),
+.animated-text-container .wav-text .wel:nth-child(13),
+.animated-text-container .wa-text .wel:nth-child(13) {
+  animation-delay: 0.8s;
+}
+.animated-text-container .wave-text .wel:nth-child(14),
+.animated-text-container .wav-text .wel:nth-child(14),
+.animated-text-container .wa-text .wel:nth-child(14) {
+  animation-delay: 0s;
+}
+.animated-text-container .wave-text .wel:nth-child(15),
+.animated-text-container .wav-text .wel:nth-child(15),
+.animated-text-container .wa-text .wel:nth-child(15) {
+  animation-delay: 0.2s;
+}
+.animated-text-container .wave-text .wel:nth-child(16),
+.animated-text-container .wav-text .wel:nth-child(16),
+.animated-text-container .wa-text .wel:nth-child(16) {
+  animation-delay: 0.8s;
+}
+.animated-text-container .wave-text .wel:nth-child(17),
+.animated-text-container .wav-text .wel:nth-child(17),
+.animated-text-container .wa-text .wel:nth-child(17) {
+  animation-delay: 0s;
+}
+.animated-text-container .wave-text .wel:nth-child(18),
+.animated-text-container .wav-text .wel:nth-child(18),
+.animated-text-container .wa-text .wel:nth-child(18) {
+  animation-delay: 0.2s;
+}
+.animated-text-container .wave-text .wel:nth-child(19),
+.animated-text-container .wav-text .wel:nth-child(19),
+.animated-text-container .wa-text .wel:nth-child(19) {
+  animation-delay: 0.2s;
+}
+.animated-text-container .wave-text .wel:nth-child(20),
+.animated-text-container .wav-text .wel:nth-child(20),
+.animated-text-container .wa-text .wel:nth-child(20) {
+  animation-delay: 0.8s;
+}
+.animated-text-container .wave-text .wel:nth-child(21),
+.animated-text-container .wav-text .wel:nth-child(21),
+.animated-text-container .wa-text .wel:nth-child(21) {
+  animation-delay: 0s;
+}
+.animated-text-container .wave-text .wel:nth-child(22),
+.animated-text-container .wav-text .wel:nth-child(22),
+.animated-text-container .wa-text .wel:nth-child(22) {
+  animation-delay: 0.2s;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.heroe {
+  background-color: var(--color-ocho);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+#texto {
+  color: var(--color-cuatro);
+}
+
+.card-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#tite {
+  color: #05ffde;
+  font-weight: bold;
+}
+#tite:hover {
+  color: var(--color-siete);
+  background-color: var(--color-back);
+}
+
+#buut {
+  color: var(--color-tres);
+  border: 2px #ecbf6e;
+  font-weight: bolder;
+}
+#buut:hover {
+  color: var(--color-siete);
+}
+
+#tto,
+#tt {
+  color: var(--color-siete);
+  font-weight: bold;
+}
+
+#turquiaModalLabel,
+#libanoModalLabel,
+#egiptoModalLabel {
+  color: var(--color-siete);
+}
+
+.par {
+  color: var(--color-siete);
+  font-size: large;
+}
+
+.modal-egipto {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Romantic_dinner_in_Egypt_.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+#modal-libano {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Byblos_lebanons.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.modal-turquia {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/turquia.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+@font-face {
+  font-family: "Adelia";
+  src: url("/fonts/adelia.otf") format("opentype"), url("/fonts/adelia.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Better_together";
+  src: url("/fonts/Better Together.otf") format("opentype"), url("/fonts/Better Together.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Furqan";
+  src: url("/fonts/Furqan.otf") format("opentype"), url("/fonts/Furqan.ttf") format("truetype"), url("/fonts/Furqan.woff") format("woff");
+}
+@font-face {
+  font-family: "Kahfee";
+  src: url("/fonts/Kahfee.otf") format("opentype");
+}
+@font-face {
+  font-family: "Michland";
+  src: url("/fonts/Michland Script.otf") format("opentype");
+}
+@font-face {
+  font-family: "Persian";
+  src: url("/fonts/Persian Personal Used.otf") format("opentype");
+}
+@font-face {
+  font-family: "RamadhanMubarok";
+  src: url("/fonts/RamadhanMubarok-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Ramadhan";
+  src: url("/fonts/Special Ramadhan (DEMO).otf") format("opentype");
+}
+@font-face {
+  font-family: "WorldDiscovery";
+  src: url("/fonts/WorldDiscoveryTwo_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoveryThree_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoveryFour_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoveryFive_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoverySix_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoverySwash_PERSONAL_USE_ONLY.otf") format("opentype");
+}
+@font-face {
+  font-family: "Photoshoot";
+  src: url("/fonts/Photoshoot-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OnlyGirl";
+  src: url("/fonts/KGOnlyGirlInTheWorld.otf") format("opentype"), url("/fonts/KGOnlyGirlInTheWorld.ttf") format("truetype");
+}
+:root {
+  --fuente-uno: "Adelia";
+  --fuente-dos: "Better_together";
+  --fuente-tres: "Furqan";
+  --fuente-cuatro:"Kahfee";
+  --fuente-cinco: "Michland";
+  --fuente-seis: "Persian";
+  --fuente-siete: "RamadhanMubarok";
+  --fuente-ocho: "Ramadhan";
+  --fuente-nine:"WolrdDiscovery";
+  --fiuente-ten: "Photoshoot";
+  --fuente-once: "OnlyGirl";
+}
+
+/*
+----------------------------SASS-----------------------------
+*/
+/*
+----------------------------CSS------------------------------
+*/
+:root {
+  --color-uno: #1c3394;
+  --color-dos: #355fe4;
+  --color-tres: #f5bf57;
+  --color-cuatro: #ecbf6e;
+  --color-cinco: #269998;
+  --color-seis: #55d5c9;
+  --color-back: rgba(28, 51, 148, 0.5);
+  --color-siete: rgba(85, 213, 201);
+  --color-ocho: rgba(49, 132, 187, 0.5);
+}
+
+.back {
+  background-color: rgba(28, 51, 148, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.back legend legend,
+.back .form-label legend,
+.back .form-check-label legend {
+  text-align: center;
+  font-size: xx-large;
+  padding-bottom: 2%;
+  color: var(--color-tres);
+}
+.back legend.form-label, .back legend.form-check-label,
+.back .form-label.form-label,
+.back .form-label.form-check-label,
+.back .form-check-label.form-label,
+.back .form-check-label.form-check-label {
+  color: var(--color-cuatro);
+  font-weight: bolder;
+  font-size: larger;
+}
+.back .boton {
+  background-color: var(--color-ocho);
+  color: var(--color-tres);
+  border: 2px #ecbf6e;
+  font-weight: bolder;
+}
+.back .boton:hover {
+  color: var(--color-siete);
+}
+
+/*
+----------------------------SASS-----------------------------
+*/
+/*
+----------------------------CSS------------------------------
+*/
+:root {
+  --color-uno: #1c3394;
+  --color-dos: #355fe4;
+  --color-tres: #f5bf57;
+  --color-cuatro: #ecbf6e;
+  --color-cinco: #269998;
+  --color-seis: #55d5c9;
+  --color-back: rgba(28, 51, 148, 0.5);
+  --color-siete: rgba(85, 213, 201);
+  --color-ocho: rgba(49, 132, 187, 0.5);
+}
+
+@font-face {
+  font-family: "Adelia";
+  src: url("/fonts/adelia.otf") format("opentype"), url("/fonts/adelia.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Better_together";
+  src: url("/fonts/Better Together.otf") format("opentype"), url("/fonts/Better Together.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Furqan";
+  src: url("/fonts/Furqan.otf") format("opentype"), url("/fonts/Furqan.ttf") format("truetype"), url("/fonts/Furqan.woff") format("woff");
+}
+@font-face {
+  font-family: "Kahfee";
+  src: url("/fonts/Kahfee.otf") format("opentype");
+}
+@font-face {
+  font-family: "Michland";
+  src: url("/fonts/Michland Script.otf") format("opentype");
+}
+@font-face {
+  font-family: "Persian";
+  src: url("/fonts/Persian Personal Used.otf") format("opentype");
+}
+@font-face {
+  font-family: "RamadhanMubarok";
+  src: url("/fonts/RamadhanMubarok-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Ramadhan";
+  src: url("/fonts/Special Ramadhan (DEMO).otf") format("opentype");
+}
+@font-face {
+  font-family: "WorldDiscovery";
+  src: url("/fonts/WorldDiscoveryTwo_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoveryThree_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoveryFour_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoveryFive_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoverySix_PERSONAL_USE_ONLY.otf") format("opentype"), url("/fonts/WorldDiscoverySwash_PERSONAL_USE_ONLY.otf") format("opentype");
+}
+@font-face {
+  font-family: "Photoshoot";
+  src: url("/fonts/Photoshoot-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OnlyGirl";
+  src: url("/fonts/KGOnlyGirlInTheWorld.otf") format("opentype"), url("/fonts/KGOnlyGirlInTheWorld.ttf") format("truetype");
+}
+:root {
+  --fuente-uno: "Adelia";
+  --fuente-dos: "Better_together";
+  --fuente-tres: "Furqan";
+  --fuente-cuatro:"Kahfee";
+  --fuente-cinco: "Michland";
+  --fuente-seis: "Persian";
+  --fuente-siete: "RamadhanMubarok";
+  --fuente-ocho: "Ramadhan";
+  --fuente-nine:"WolrdDiscovery";
+  --fiuente-ten: "Photoshoot";
+  --fuente-once: "OnlyGirl";
+}
+
 /*Variables colores sombreado*/
 * {
   font-family: var(--fuente-nine);
@@ -16,7 +491,7 @@ body {
           backdrop-filter: blur(2px);
 }
 body .bckgd {
-  background-color: var(--color-back);
+  background-color: rgba(28, 51, 148, 0.5);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }

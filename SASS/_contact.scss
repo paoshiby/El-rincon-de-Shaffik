@@ -1,0 +1,35 @@
+@import "fonts";
+@import "colors";
+@mixin background-color($back-color){
+    background-color: $back-color;
+    backdrop-filter: blur(5px);
+}
+.back {
+    @include background-color($back);     
+    legend,
+    .form-label,
+    .form-check-label {
+        legend {
+            text-align: center;
+            font-size: xx-large;
+            padding-bottom: 2%;
+            color: var(--color-tres);
+        }
+        &.form-label,
+        &.form-check-label {
+            color: var(--color-cuatro);
+            font-weight: bolder;
+            font-size: larger;
+        }
+    }
+    .boton {
+        background-color: var(--color-ocho);
+        color: var(--color-tres);
+        border: 2px #ecbf6e;
+        font-weight: bolder;
+
+        &:hover {
+            color: var(--color-siete);
+        }
+    }
+}

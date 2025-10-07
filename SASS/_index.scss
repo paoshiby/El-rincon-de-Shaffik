@@ -1,0 +1,124 @@
+@import "fonts";
+@import "colors";
+
+@mixin background-styles {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@mixin wave-text-base {
+    width: 100%;
+    color: var(--color-cuatro);
+    text-shadow:
+        0px 0px 2px var(--color-dos),
+        0px 0px 8px var(--color-dos);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+@mixin title-base-styles {
+    color: var(--color-siete);
+    font-weight: bold;
+}
+@mixin button-base-styles {
+    color: var(--color-tres);
+    border: 2px #ecbf6e; 
+    font-weight: bolder;
+
+    &:hover {
+        color: var(--color-siete);
+    }
+}
+.animated-text-container {
+    text-align: center;
+    padding: 5% 0%;
+    .wave-text,
+    .wa-text,
+    .wav-text {
+        @include wave-text-base;
+    }
+    .wave-text .wel,
+    .wav-text .wel,
+    .wa-text .wel {
+        display: inline-block;
+        font-size: 4rem;
+        animation: wave 2s ease-in-out infinite;
+        @for $i from 1 through 22 {
+            &:nth-child(#{$i}) {
+                @if $i <= 5 {
+                    animation-delay: ($i - 1) * 0.2s; // 0s, 0.2s, 0.4s, 0.6s, 0.8s
+                } @else if $i == 6 or $i == 11 or $i == 14 or $i == 17 or $i == 21 {
+                    animation-delay: 0s; // Los que empiezan nueva secuencia
+                } @else if $i == 7 or $i == 12 or $i == 15 or $i == 18 or $i == 19 or $i == 22 {
+                    animation-delay: 0.2s;
+                } @else if $i == 8 {
+                    animation-delay: 0.4s;
+                } @else if $i == 9 {
+                    animation-delay: 0.6s;
+                } @else if $i == 10 or $i == 13 or $i == 16 or $i == 20 {
+                    animation-delay: 0.8s;
+                }
+            }
+        }
+    }
+}
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.heroe {
+    background-color: var(--color-ocho);
+    backdrop-filter: blur(5px);
+}
+
+#texto {
+    color: var(--color-cuatro);
+}
+
+.card-cover {
+    @include background-styles;
+}
+#tite {
+    color: #05ffde;
+    font-weight: bold;
+
+    &:hover {
+        color: var(--color-siete);
+        background-color: var(--color-back);
+    }
+}
+#buut {
+    @include button-base-styles;
+}
+#tto,
+#tt {
+    @include title-base-styles;
+}
+#turquiaModalLabel,
+#libanoModalLabel,
+#egiptoModalLabel {
+    color: var(--color-siete);
+}
+.par {
+    color: var(--color-siete);
+    font-size: large;
+}
+.modal-egipto {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/Romantic_dinner_in_Egypt_.jfif');
+    @include background-styles;
+    color: white;
+}
+#modal-libano {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/Byblos_lebanons.jfif');
+    @include background-styles;
+    color: white;
+}
+.modal-turquia {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/turquia.jfif');
+    @include background-styles;
+    color: white;
+}
