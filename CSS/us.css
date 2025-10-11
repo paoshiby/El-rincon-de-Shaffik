@@ -1,28 +1,39 @@
 @import url('/CSS/fonts.css');
 @import url('/CSS/colors.css');
 #lp{
-    object-fit: cover;
+  object-fit: cover;
 }
 .bck{
-    background: var(--color-back);
-    height: 100vh;
+  background: var(--color-back);
+  height: 100vh;
+}
+.acord{
+  background-color: var(--color-back);
+  height: 90vh;
+  color: var(--color-siete);
+}
+#tte{
+  font-size: xx-large;
+}
+.theme{
+  font-size: large;
+  font-family: var(--fuente-cuatro);
 }
 .accordion-wrap {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
+.accordion-wrap .accordion-button{
+  text-decoration: none;
+  position: relative;
+}
 
-.accordion-wrap a {
-  color: #fff;
+.accordion-wrap .accordion-button:hover {
   text-decoration: none;
 }
 
-.accordion-wrap a:hover {
-  text-decoration: none;
-}
-
-.accordion-wrap .accordion {
+.accordion-wrap .accordion-item {
   position: relative;
   border-top: 1px solid #fff;
 }
@@ -31,7 +42,7 @@
   border-bottom: 1px solid #fff;
 }
 
-.accordion-wrap .accordion .teaser {
+.accordion-wrap .accordion-button .teaser {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -40,7 +51,7 @@
   position: relative;
 }
 
-.accordion-wrap .accordion .teaser:last-child {
+.accordion-wrap .accordion-button .teaser:last-child {
   border-bottom: 1px solid #fff;
 }
 .accordion-wrap .accordion .teaser .title .theme {
@@ -48,22 +59,24 @@
 }
 
 @media (max-width: 990px) {
-  .accordion-wrap .accordion .teaser {
+  .accordion-wrap .accordion-button .teaser {
     flex-direction: column;
   }
 }
 
-.accordion-wrap .accordion .content {
+.accordion-wrap .accordion-body .content {
   padding: 0 120px 30px 200px;
+  font-size: large;
+  font-weight: bold;
 }
 
 @media (max-width: 1200px) {
-  .accordion-wrap .accordion .content {
+  .accordion-wrap .accordion-body .content {
     padding: 0 120px 30px 0;
   }
 }
 
-.accordion-wrap .accordion .accordion-toggle {
+.accordion-wrap .accordion-item .accordion-toggle {
   width: 100px;
   height: 100%;
   position: absolute;
@@ -76,19 +89,18 @@
   transition: 0.3s ease;
 }
 
-.accordion-wrap .accordion .accordion-toggle span {
+.accordion-wrap .accordion-item .accordion-toggle span {
   background-color: #fff;
   transition: 0.3s ease;
 }
 
-.accordion-wrap .accordion .accordion-toggle span.one {
+.accordion-wrap .accordion-item .accordion-toggle span.one {
   height: 1px;
   width: 26px;
   position: absolute;
   top: 50%;
 }
-
-.accordion-wrap .accordion .accordion-toggle span.two {
+.accordion-wrap .accordion-item .accordion-toggle span.two {
   width: 1px;
   height: 26px;
   position: absolute;
@@ -96,8 +108,7 @@
   opacity: 0;
   transform: rotate(120deg);
 }
-
-.accordion-wrap .accordion.collapsed .accordion-toggle span.two {
+.accordion-wrap .accordion-button.collapsed .accordion-toggle span.two {
   opacity: 1;
   transform: rotate(0);
 }

@@ -143,21 +143,25 @@
     background-size: cover;
     background-position: center;
     color: white;
+    padding: 5%;
 }
 #modal-libano {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/Byblos_lebanons.jfif');
     background-size: cover;
     background-position: center;
     color: white;
+    padding: 5%;
 }
 .modal-turquia {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/turquia.jfif');
     background-size: cover;
     background-position: center;
     color: white;
+    padding: 5%;
 }
 #turquiaModalLabel, #libanoModalLabel, #egiptoModalLabel{
     color: var(--color-siete);
+    font-size: xx-large;
 }
 .par{
     color: var(--color-siete);
