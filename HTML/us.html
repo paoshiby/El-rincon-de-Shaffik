@@ -68,12 +68,12 @@
             <div class="col-lg-6">
                 <img src="/img/symbol1.png" alt="Simbolo1" class="rounded-circle" id="lp" width="180" height="180">
                 <h2 class="fw-normal text-info">Misión</h2>
-                <button type="button" class="btn btn-info text-primary" data-bs-toggle="modal" data-bs-target="#misionModal">Ver más...</button>
+                <button type="button" class="btn btn-info text-primary fw-bold" data-bs-toggle="modal" data-bs-target="#misionModal">Ver más...</button>
             </div>
             <div class="col-lg-6">
                 <img src="/img/symbol2.png" alt="Simbolo2" class="rounded-circle" id="lp" width="180" height="180">
                 <h2 class="fw-normal text-info">Visión</h2>
-                <p><a class="btn btn-info text-primary" href="#" data-bs-toggle="modal" data-bs-target="#visionModal">View details »</a></p>
+                <button type="button" class="btn btn-info text-primary fw-bold" data-bs-toggle="modal" data-bs-target="#visionModal">Ver más...</button>
             </div>
         </div>
     </main>  
@@ -150,11 +150,11 @@
             </div>
         </div>
     </article>
-    <section class="container d-flex justify-content-end mb-2 bck">
+    <section class="container-fluid d-flex mt-5 mb-5 bck">
         <div class="row">
             <div class="col">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 ms-3">
                         <h1 id="texto" style="color: #f5bf57;" class=" display-3 fw-bold mb-3 mt-5">Sabías que...</h1>
                         <p class="lead text-warning text-justify mt-5">Las pirámides de Giza no eran solo tumbas para los faraones, sino monumentos colosales construidos para asegurar su paso a 
                             la vida después de la muerte. Los antiguos egipcios creían que el faraón se convertiría en un dios al morir, y la pirámide 
@@ -175,18 +175,18 @@
                             <td>
                                 <form>
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-5">
                                             <label for="contname" class="form-label">Nombres:</label>
                                             <input type="text" class="form-control" id="contname" name="contname" placeholder="Nombres">
                                         </div>
                                         <div class="col-6">
-                                            <label for="contlastname" class="form-label">Apellidos:</label>
-                                            <input type="text" class="form-control" id="contlastname" name="contlastname" placeholder="Apellidos">
+                                            <label for="contlastname" class="form-label ps-4">Apellidos:</label>
+                                            <input type="text" class="form-control ms-4" id="contlastname" name="contlastname" placeholder="Apellidos">
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-6 mt-2">
-                                            <label for="contphone" class="form-label">Teléfono:</label>
+                                        <div class="col-6 mt-3 d-flex">
+                                            <label for="contphone" class="form-label me-4">Teléfono:</label>
                                             <div class="input-group">
                                                 <span class="input-group-text">+569</span>
                                                 <input type="tel" class="form-control" id="contphone" name="contphone" placeholder="12345678">
@@ -194,9 +194,9 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-12 d-flex mt-2">
-                                            <label for="mov" class="form-label me-2">Motivo:</label>
-                                            <div class="d-flex w-100">
+                                        <div class="col-12 d-flex mt-3">
+                                            <label for="mov" class="form-label me-5">Motivo:</label>
+                                            <div class="d-flex">
                                                 <div class="list-group mx-0">
                                                     <label class="list-group-item d-flex gap-2">
                                                     <input class="form-check-input flex-shrink-0" type="radio" name="listGroupRadios" id="listGroupRadios1" value="" checked="">
@@ -214,9 +214,9 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-12">
-                                            <label for="message" class="form-label ">Mensaje:</label>
-                                            <textarea class="form-control" name="message" id="message" rows="4"></textarea>
+                                        <div class="col-12 d-flex mt-3">
+                                            <label for="message" class="form-label me-4">Mensaje:</label>
+                                            <textarea class="form-control" name="message" id="message" rows="4" placeholder="Asunto..."></textarea>
                                         </div>
                                         <div class="col-12 d-flex justify-content-end mt-2">
                                             <button type="submit" class="btn boton">Enviar</button>
