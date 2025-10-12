@@ -1,0 +1,169 @@
+@import url('/CSS/fonts.css');
+@import url('/CSS/colors.css');
+
+/*Texto animado banner*/
+.animated-text-container {
+    text-align: center;
+    padding: 5% 0%;
+}
+.wave-text,
+.wa-text,
+.wav-text {
+    width: 100%;
+    color: var(--color-cuatro);
+    text-shadow: 0px 0px 2px var(--color-dos),
+                0px 0px 8px var(--color-dos);
+    margin: 0;
+    padding: 0;
+}
+.wave-text{
+    margin-bottom: 2rem;
+}
+.wa-text{
+    margin-bottom: 2rem;
+}
+.wave-text .wel, .wav-text .wel, .wa-text .wel {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text .wel:nth-child(1), .wav-text .wel:nth-child(1), .wav-text .wel:nth-child(1){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(2), .wav-text .wel:nth-child(2), .wav-text .wel:nth-child(2){
+    animation-delay: 0.2s;
+}
+.wave-text .wel:nth-child(3),.wav-text .wel:nth-child(3), .wav-text .wel:nth-child(3){
+    animation-delay: 0.4s;
+}
+.wave-text .wel:nth-child(4), .wav-text .wel:nth-child(4), .wav-text .wel:nth-child(4){
+    animation-delay: 0.6s;
+}
+.wave-text .wel:nth-child(5), .wav-text .wel:nth-child(5), .wav-text .wel:nth-child(5){
+    animation-delay: 0.8s;
+}
+.wave-text .wel:nth-child(6), .wav-text .wel:nth-child(6), .wav-text .wel:nth-child(6){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(7), .wav-text .wel:nth-child(7), .wav-text .wel:nth-child(7){
+    animation-delay: 0.2s;
+}
+.wave-text .wel:nth-child(8), .wav-text .wel:nth-child(8), .wav-text .wel:nth-child(8){
+    animation-delay: 0.4s;
+}
+.wave-text .wel:nth-child(9), .wav-text .wel:nth-child(9), .wav-text .wel:nth-child(9){
+    animation-delay: 0.6s;
+}
+.wave-text .wel:nth-child(10), .wav-text .wel:nth-child(10){
+    animation-delay: 0.8s;
+}
+.wave-text .wel:nth-child(11), .wav-text .wel:nth-child(11){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(12), .wav-text .wel:nth-child(12){
+    animation-delay: 0.2s;
+}
+.wave-text .wel:nth-child(13), .wav-text .wel:nth-child(13){
+    animation-delay: 0.8s;
+}
+.wave-text .wel:nth-child(14), .wav-text .wel:nth-child(14){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(15), .wav-text .wel:nth-child(15){
+    animation-delay: 0.2s;
+}
+.wave-text .wel:nth-child(16), .wav-text .wel:nth-child(16){
+    animation-delay: 0.8s;
+}
+.wave-text .wel:nth-child(17), .wav-text .wel:nth-child(17){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(18), .wav-text .wel:nth-child(18){
+    animation-delay: 0.2s;
+}.wave-text .wel:nth-child(19), .wav-text .wel:nth-child(19){
+    animation-delay: 0.2s;
+}
+.wave-text .wel:nth-child(20), .wav-text .wel:nth-child(20){
+    animation-delay: 0.8s;
+}
+.wave-text .wel:nth-child(21), .wav-text .wel:nth-child(21){
+    animation-delay: 0s;
+}
+.wave-text .wel:nth-child(22), .wav-text .wel:nth-child(22){
+    animation-delay: 0.2s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.heroe{
+    background-color: var(--color-ocho);
+    backdrop-filter: blur(5px);
+}
+#texto{
+    color: var(--color-cuatro);
+}
+.card-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#tite{
+    color: #05ffde;
+    font-weight: bold;
+}
+#tite:hover{
+    color: var(--color-siete);
+    background-color: var(--color-back);
+}
+#buut{ 
+    color: var(--color-tres); 
+    border: 2px #ecbf6e; 
+    font-weight: bolder;
+}
+#buut:hover{
+    color: var(--color-siete);
+}
+#tto{
+    color: var(--color-siete);
+    font-weight: bold;
+}
+#tt{
+    color: var(--color-siete);
+    font-weight: bold;
+}
+.modal-egipto {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/Romantic_dinner_in_Egypt_.jfif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5%;
+}
+#modal-libano {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/Byblos_lebanons.jfif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5%;
+}
+.modal-turquia {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/turquia.jfif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5%;
+}
+#turquiaModalLabel, #libanoModalLabel, #egiptoModalLabel{
+    color: var(--color-siete);
+    font-size: xx-large;
+}
+.par{
+    color: var(--color-siete);
+    font-size: large;
+}

@@ -1,0 +1,25 @@
+@import url('/CSS/fonts.css');
+@import url('/CSS/colors.css');
+.back{
+    background:var(--color-back);
+}
+legend{
+    text-align: center; 
+    font-size: xx-large; 
+    padding-bottom: 2%;
+    color: var(--color-tres);
+}
+.form-label, .form-check-label{
+    color: var(--color-cuatro);
+    font-weight: bolder;
+    font-size: larger;
+}
+.boton{ 
+    background-color: var(--color-ocho); 
+    color: var(--color-tres); 
+    border: 2px #ecbf6e; 
+    font-weight: bolder;
+}
+.boton:hover{
+    color: var(--color-siete);
+}
