@@ -47,6 +47,10 @@ tooltipsWithEvents(
     'bottom',
     true
 );
+function mostrarEstadoTooltips() {
+    const totalTooltips = Object.keys(tooltipsMap).length;
+    console.log(`[ESTADO] Total de elementos con Tooltip inicializado: ${totalTooltips}`);
+}
 // Página
 function verificarScroll(){
     console.log("El usuario se desplazó por la página");
