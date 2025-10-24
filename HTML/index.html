@@ -36,7 +36,9 @@
                             <a href="/HTML/us.html" class="nav-link" id="leter">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item" id="blo">
-                            <a href="/HTML/login.html" class="nav-link" id="leter">Iniciar Sesión/Registrarse</a>
+                            <a class="btn" id="leter" data-bs-toggle="offcanvas" href="#offcanvasLogin" role="button" aria-controls="offcanvasExample">
+                                Inicio Sesión/Registro
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -137,10 +139,10 @@
         </div>
     </article>    
     <section>
-        <div class="container px-4 py-5" id="custom-cards">
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="container px-2 py-5" id="custom-cards">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-space-between g-4 py-5">
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: linear-gradient(rgba(46, 45, 45, 0.5), rgba(71, 71, 71, 0.5)),url('/img/Romantic_dinner_in_Egypt_.jfif');">
+                    <div class="card card-cover w-100 h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: linear-gradient(rgba(46, 45, 45, 0.5), rgba(71, 71, 71, 0.5)),url('/img/Romantic_dinner_in_Egypt_.jfif');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" id="tto">Secretos del Nilo...</h3>
                             <small class="pt-5 mt-2 mb-4 display-6 lh-1 fw-bold">
@@ -159,7 +161,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: linear-gradient(rgba(46, 45, 45, 0.5), rgba(71, 71, 71, 0.5)),url('/img/Byblos_lebanons.jfif');">
+                    <div class="card card-cover w-100 h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: linear-gradient(rgba(46, 45, 45, 0.5), rgba(71, 71, 71, 0.5)),url('/img/Byblos_lebanons.jfif');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" id="tto">La Elegancia de Byblos...</h3>
                             <small class="pt-5 mt-2 mb-4 display-6 lh-1 fw-bold ">
@@ -178,7 +180,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: linear-gradient(rgba(46, 45, 45, 0.5), rgba(71, 71, 71, 0.5)),url('/img/turquia.jfif');">
+                    <div class="card card-cover w-100 h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: linear-gradient(rgba(46, 45, 45, 0.5), rgba(71, 71, 71, 0.5)),url('/img/turquia.jfif');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-2 display-6 lh-1 fw-bold" id="tto">Estambul en Movimiento...</h3>
                             <small class="pt-5 mt-4 mb-4 display-6 lh-1 fw-bold">
@@ -260,6 +262,44 @@
                 </div>
                 <div class="modal-footer" style="border-top: none;">
                     <button type="button" class="btn" id="buut" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end obck" tabindex="-1" id="offcanvasLogin" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body">
+            <div class="form-offcanvas-content form-content-base mt-2 p-0">
+                <div class="login-html">
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Iniciar Sesión</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up">
+                    <label for="tab-2" class="tab">
+                        <a href="/HTML/login.html" class="tab-link">Registrarse</a> 
+                    </label>
+                    <div class="login-form">
+                        <div class="sign-in-htm">
+                            <div class="group">
+                                <label for="user-in" class="label">Usuario:</label>
+                                <input id="user-in" type="text" class="input">
+                            </div>
+                            <div class="group">
+                                <label for="pass-in" class="label">Contraseña:</label>
+                                <input id="pass-in" type="password" class="input" data-type="password">
+                            </div>
+                            <div class="group">
+                                <input id="check" type="checkbox" class="check" checked>
+                                <label for="check">
+                                    <span class="icon"></span> Mantener iniciado
+                                </label>
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="Iniciar Sesión">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a class="a" href="/HTML/login.html">Olvidó contraseña?</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
