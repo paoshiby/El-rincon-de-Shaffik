@@ -10,7 +10,7 @@ const accordionPaises = document.getElementById('paises');
 
 function crearItemAcordeon(id, title, subtitle, bodyContent) {
     if (!accordionPaises) {
-        console.error("No se encontró el contenedor del acordeón con ID 'accordionPaises'.");
+        console.error("No se encontró el contenedor del acordeón con ID 'paises'.");
         return;
     }
     const newItemHTML = `
@@ -29,7 +29,7 @@ function crearItemAcordeon(id, title, subtitle, bodyContent) {
                     </div>
                 </button>
             </h2>
-            <div id="${id}" class="accordion-collapse collapse" data-bs-parent="#accordionPaises">
+            <div id="${id}" class="accordion-collapse collapse" data-bs-parent="#paises">
                 <div class="accordion-body">
                     <div class="content">
                         ${bodyContent}
@@ -45,7 +45,7 @@ function crearItemAcordeon(id, title, subtitle, bodyContent) {
 async function cargarDatosPaisesEnAcordeon() {
     const codigosPaises = 'TUR;DZA;SAU;BHR;QAT;COM;DJI;EGY;ARE;IRQ;JOR;KWT;LBN;LBY;MAR;MRT;OMN;PSE;SYR;SOM;SDN;TUN;YEM'; 
 
-    const apiUrl = `https://restcountries.com/v3.1/alpha?codes=${codigosPaises}&fields=name,capital,region,languages,currencies,translation`;
+    const apiUrl = `https://restcountries.com/v3.1/alpha?codes=${codigosPaises}&fields=name,capital,region,languages,currencies,translations`;
 
     try {
         const respuesta = await fetch(apiUrl);
