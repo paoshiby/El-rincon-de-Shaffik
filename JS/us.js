@@ -43,7 +43,7 @@ function crearItemAcordeon(id, title, subtitle, bodyContent) {
 }
 
 async function cargarDatosPaisesEnAcordeon() {
-    const codigosPaises = 'TUR;DZA;SAU;BHR;QAT;COM;DJI;EGY;ARE;IRQ;JOR;KWT;LBN;LBY;MAR;MRT;OMN;PSE;SYR;SOM;SDN;TUN;YEM'; 
+    const codigosPaises = 'TUR,DZA,SAU,BHR,QAT;COM;DJI;EGY;ARE;IRQ;JOR;KWT;LBN;LBY;MAR;MRT;OMN;PSE;SYR;SOM;SDN;TUN;YEM'; 
 
     const apiUrl = `https://restcountries.com/v3.1/alpha?codes=${codigosPaises}&fields=name,capital,region,languages,currencies,translations`;
 
