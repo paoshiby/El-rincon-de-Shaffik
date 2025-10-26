@@ -1,0 +1,11 @@
+:root{
+    --color-uno: #1c3394;
+    --color-dos: #355fe4;
+    --color-tres: #f5bf57;
+    --color-cuatro: #ecbf6e;
+    --color-cinco: #269998;
+    --color-seis: #55d5c9;
+    --color-back: rgba(28, 51, 148, 0.5);
+    --color-siete: rgba(85, 213, 201);
+    --color-ocho: rgba(49, 132, 187, 0.5); 
+}
