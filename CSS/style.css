@@ -16,7 +16,8 @@ body{
     background-attachment: fixed; 
     backdrop-filter: blur(3px);
     margin: 0;
-    padding: 0;/* Oculta cualquier desbordamiento horizontal restante */
+    padding: 0;
+    overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal restante */
     max-width: 100%;
 }
 .bckgd{
@@ -24,18 +25,19 @@ body{
     backdrop-filter: blur(5px);
 }
 .navbar-collapse #leter,
-.button-container .bn #blo{
+.button-container #blo{
     color: var(--color-tres);
     font-weight: bold;
     font-size: larger;
 }
 .navbar-collapse .nav-active {
     color: var(--color-siete) !important;
-    box-shadow: 0px 0px 10px #f9fbfc,
+    text-shadow: 0px 0px 20px #f9fbfc,
                 0px 0px 20px #40d7f1,
-                0px 0px 40px #40d7f1;
+                0px 0px 60px #40d7f1;
 }
-.navbar-collapse .nav-link:hover{
+.navbar-collapse .nav-link:hover,
+.button-container:hover{
     color: var(--color-siete);
     transform: scale(1.1);
     box-shadow: none;
@@ -55,14 +57,14 @@ body{
     justify-content: center;
   }
 }
-.header> .button-container>button,
+.button-container #blo,
 nav> .navbar-collapse> .nav{
     transition: transform 0.3s ease-in-out;
 }
 #bin> #leter:hover, 
 #bus> #leter:hover, 
 #bco> #leter:hover, 
-#blo> #leter:hover{
+#blo:hover{
     text-shadow: 0px 0px 5px #f9fbfc,
                 0px 0px 10px #40d7f1,
                 0px 0px 16px #40d7f1;
@@ -70,14 +72,14 @@ nav> .navbar-collapse> .nav{
 #bin> #leter, 
 #bus>#leter, 
 #bco> #leter, 
-#blo> #leter{
+#blo{
     text-decoration: none; 
     font-weight: bold;
     color: var(--color-cuatro); 
 }
 .carousel {
     height: 100vh;
-    /*overflow: hidden;   */
+    overflow: hidden;   
 }
 .carousel-inner, .carousel-item {
     height: 100%;

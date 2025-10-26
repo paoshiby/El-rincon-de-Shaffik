@@ -14,10 +14,15 @@
 <body>
     <div class="bckgd">
         <header class="header">
-            <div class="container-fluid d-flex flex-wrap justify-content-center align-items-center">
-                <a class="d-flex mb-sm-0 mb-md-0 mb-lg-0 me-lg-auto me-md-auto me-sm-auto ms-5" href="/HTML/index.html" >
+            <div class="container-fluid d-flex flex-wrap align-items-center">
+                <a class="d-flex justify-content-star mb-sm-0 mb-md-0 mb-lg-0 me-lg-auto me-md-auto me-sm-auto ms-5" href="/HTML/index.html" >
                     <img src="/img/1.png" alt="Logo" height="100">
                 </a>
+                <div class="button-container d-flex justify-content-end me-5" id="blo">
+                    <a class="btn" class="" id="blo" data-bs-toggle="offcanvas" href="#offcanvasLogin" role="button" aria-controls="offcanvasExample">
+                        Inicio Sesión/Registro
+                    </a>
+                </div>
             </div>
         </header>
         <nav class="navbar navbar-expand-lg">
@@ -35,11 +40,6 @@
                         </li>
                         <li class="nav-item" id="bus">
                             <a href="/HTML/us.html" class="nav-link" id="leter">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item" id="blo">
-                            <a class="btn" id="leter" data-bs-toggle="offcanvas" href="#offcanvasLogin" role="button" aria-controls="offcanvasExample">
-                                Inicio Sesión/Registro
-                            </a>
                         </li>
                     </ul>
                 </div>
@@ -67,7 +67,7 @@
             <span class="visually-hidden">Next</span> 
         </button>
     </div>
-    <main>
+    <main data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">
         <div class="animated-text-container my-5">
             <h1 class="wave-text">
                 <span class="wel">¡</span>
@@ -121,25 +121,27 @@
             </h1>
         </div>
     </main>
-    <article class="heroe" >
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5" >
-            <div class="col-10 col-sm-8 col-lg-6">
-                <iframe id="vid" width="560" height="415" src="https://www.youtube.com/embed/DzG20oCSsX0?si=SPbacBWcIrdBKL2g&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <article class="heroe" data-aos="zoom-out" data-aos-duration="500" data-aos-easing="easy-in-back">
+        <div class="row flex-lg-row-reverse align-items-center g-5 p-5" >
+            <div class="col-10 col-sm-8 col-lg-6" data-aos="zoom-out-left" data-aos-delay="500" data-aos-duration="1500">
+                <div class="ratio ratio-4x3">
+                    <iframe src="https://www.youtube.com/embed/DzG20oCSsX0?si=SPbacBWcIrdBKL2g&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="col-lg-6 bk" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="col-lg-6 bk" data-aos="zoom-out-right" data-aos-delay="300" data-aos-duration="1000">
                 <h1 id="texto" style="color: #f5bf57;" class=" display-5 fw-bold lh-1 mb-3 ps-5">Sabah El Kher</h1>
-                <p class="lead ps-5" id="texto">En este sitio encontras información sobre el origen de las danzas árabes,
+                <p class="lead" id="texto">En este sitio encontras información sobre el origen de las danzas árabes,
                         los tipos de estilos que existen hasta el momento, también algunos diseñadores de 
                         vestuarios, nacionales e internacionales, los períodos de tiempos más relevantes 
                         para el desarrollo de lo que existe hoy en día.
                 </p>
-                <p class="lead ps-5" id="texto">Además encontrarás los baiarines que son más reconocidos en estos días en
+                <p class="lead" id="texto">Además encontrarás los baiarines que son más reconocidos en estos días en
                         Egipto, nacionales e internacionales.
                 </p>
             </div>
         </div>
     </article>    
-    <section>
+    <section data-aos="fade-up" data-aos-delay="200" data-aos-easing="linear" data-aos-anchor-placement="center-center">
         <div class="container px-2 py-5" id="custom-cards">
             <div class="row row-cols-1 row-cols-lg-3 align-items-space-between g-4 py-5">
                 <div class="col">
@@ -202,7 +204,7 @@
             </div>
         </div>
     </section>
-    <div class="fot">
+    <div class="fot" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
         <footer class="text-center text-white">
             <div class="container p-4 pb-0">
                 <section class="mb-2">
@@ -307,6 +309,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/JS/index.js"></script>
     <script src="/JS/login.js"></script>
 </body>
