@@ -1,6 +1,5 @@
 "use strict";
 
-
 const userIn = document.getElementById('user-in');
 const passIn = document.getElementById('pass-in');
 const btnSignIn = document.querySelector('.login-form .sign-in-htm .button');

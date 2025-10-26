@@ -16,8 +16,7 @@ body{
     background-attachment: fixed; 
     backdrop-filter: blur(3px);
     margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal restante */
+    padding: 0;/* Oculta cualquier desbordamiento horizontal restante */
     max-width: 100%;
 }
 .bckgd{
@@ -78,7 +77,7 @@ nav> .navbar-collapse> .nav{
 }
 .carousel {
     height: 100vh;
-    overflow: hidden;   
+    /*overflow: hidden;   */
 }
 .carousel-inner, .carousel-item {
     height: 100%;

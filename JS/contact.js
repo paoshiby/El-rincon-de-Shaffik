@@ -7,6 +7,7 @@ const sex = document.getElementsByName('gender');
 const asunto = document.getElementById('sub');
 const mensaje = document.getElementById('message');
 const form = document.getElementById('formulario');
+AOS.init();
 
 function aplicarEstilo(elemento, esValido) {
         const colorExito = "#00ff3cff"; // Un verde oscuro y visible (puedes usar 'green' si prefieres)

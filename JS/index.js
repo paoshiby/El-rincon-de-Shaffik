@@ -3,6 +3,8 @@
 const tooltipsMap = {};
 const cerrarModal = document.getElementById('buut');
 
+AOS.init();
+
 function tooltipsWithEvents(selector, titleText, placement, forcePlacement, useBodyContainer) {
     const elements = document.querySelectorAll(selector);
 
