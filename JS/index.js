@@ -2,7 +2,7 @@
 
 const tooltipsMap = {};
 const cerrarModal = document.getElementById('buut');
-
+//iniciación libreria
 AOS.init();
 
 function tooltipsWithEvents(selector, titleText, placement, forcePlacement, useBodyContainer) {
