@@ -14,15 +14,10 @@
 <body>
     <div class="bckgd">
         <header class="header">
-            <div class="container-fluid d-flex flex-wrap align-items-center">
-                <a class="d-flex justify-content-star mb-sm-0 mb-md-0 mb-lg-0 me-lg-auto me-md-auto me-sm-auto ms-5" href="/HTML/index.html" >
+            <div class="container-fluid button-container d-flex flex-wrap justify-content-center align-items-center">
+                <a class="d-flex mb-sm-0 mb-md-0 mb-lg-0 me-lg-auto me-md-auto me-sm-auto ms-5" href="/HTML/index.html" >
                     <img src="/img/1.png" alt="Logo" height="100">
                 </a>
-                <div class="button-container d-flex justify-content-end me-5" id="blo">
-                    <a class="btn" class="" id="blo" data-bs-toggle="offcanvas" href="#offcanvasLogin" role="button" aria-controls="offcanvasExample">
-                        Inicio Sesión/Registro
-                    </a>
-                </div>
             </div>
         </header>
         <nav class="navbar navbar-expand-lg">
@@ -33,13 +28,16 @@
                 <div class="collapse navbar-collapse " id="miMenu">
                     <ul class="nav me-auto justify-content-center mx-auto">
                         <li class="nav-item"  id="bin">
-                            <a href="/HTML/index.html" class="nav-link nav-active" id="leter" aria-current="page">Inicio</a>
+                            <a href="/HTML/index.html" class="nav-link" id="leter" aria-current="page">Inicio</a>
                         </li>
                         <li class="nav-item" id="bco">
-                            <a href="/HTML/contact.html" class="nav-link" id="leter">Contacto</a>
+                            <a href="/HTML/contact.html" class="nav-link nav-active" id="leter">Contacto</a>
                         </li>
                         <li class="nav-item" id="bus">
                             <a href="/HTML/us.html" class="nav-link" id="leter">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item" id="blo">
+                            <a href="/HTML/login.html" class="nav-link" id="leter">Iniciar Sesión/Registrarse</a>
                         </li>
                     </ul>
                 </div>
@@ -122,7 +120,7 @@
             </div>
         </form>
     </main>
-    <div class="fot">
+    <div class="fot" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
         <footer class="text-center text-white">
             <div class="container p-4 pb-0">
                 <section class="mb-2">
@@ -182,6 +180,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/JS/contact.js"></script>
     <script src="/JS/login.js"></script>
 </body>

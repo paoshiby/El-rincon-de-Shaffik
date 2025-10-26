@@ -3,9 +3,24 @@
 #lp{
   object-fit: cover;
 }
+.mvbuton{
+  font-family: var(--fuente-cuatro);
+  font-size: 50px;
+  color: var(--color-seis);
+}
 .bck{
   background: var(--color-back);
-  height: 95vh;
+  height: 120vh;
+  padding: 5%;
+}
+.dyk{
+  color: var(--color-seis);
+  font-family: var(--fuente-dos);
+  font-size: 150px;
+}
+.title-table{
+  color: var(--color-seis);
+  font-family: var(--fuente-siete);
 }
 .list-group{
   width: 99.8%;

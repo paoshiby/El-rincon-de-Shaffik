@@ -17,7 +17,7 @@
                 <a class="d-flex justify-content-star mb-sm-0 mb-md-0 mb-lg-0 me-lg-auto me-md-auto me-sm-auto ms-5" href="/HTML/index.html" >
                     <img src="/img/1.png" alt="Logo" height="100">
                 </a>
-                <div class="button-container d-flex justify-content-end me-5" id="blo">
+                <div class="button-container d-flex justify-content-end me-5">
                     <a class="btn" class="" id="blo" data-bs-toggle="offcanvas" href="#offcanvasLogin" role="button" aria-controls="offcanvasExample">
                         Inicio Sesión/Registro
                     </a>
@@ -32,13 +32,13 @@
                 <div class="collapse navbar-collapse " id="miMenu">
                     <ul class="nav me-auto justify-content-center mx-auto">
                         <li class="nav-item"  id="bin">
-                            <a href="/HTML/index.html" class="nav-link nav-active" id="leter" aria-current="page">Inicio</a>
+                            <a href="/HTML/index.html" class="nav-link" id="leter" aria-current="page">Inicio</a>
                         </li>
                         <li class="nav-item" id="bco">
                             <a href="/HTML/contact.html" class="nav-link" id="leter">Contacto</a>
                         </li>
                         <li class="nav-item" id="bus">
-                            <a href="/HTML/us.html" class="nav-link" id="leter">Sobre Nosotros</a>
+                            <a href="/HTML/us.html" class="nav-link nav-active" id="leter">Sobre Nosotros</a>
                         </li>
                     </ul>
                 </div>
@@ -68,19 +68,19 @@
     </div>
     <main class="container">
         <div class="row text-center my-5">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="linear">
                 <img src="/img/symbol1.png" alt="Simbolo1" class="rounded-circle" id="lp" width="180" height="180">
-                <h2 class="fw-normal text-info">Misión</h2>
+                <h2 class=" mvbuton">Misión</h2>
                 <button type="button" class="btn btn-info text-primary fw-bold" data-bs-toggle="modal" data-bs-target="#misionModal">Ver más...</button>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">
                 <img src="/img/symbol2.png" alt="Simbolo2" class="rounded-circle" id="lp" width="180" height="180">
-                <h2 class="fw-normal text-info">Visión</h2>
+                <h2 class="mvbuton">Visión</h2>
                 <button type="button" class="btn btn-info text-primary fw-bold" data-bs-toggle="modal" data-bs-target="#visionModal">Ver más...</button>
             </div>
         </div>
     </main>  
-    <article class="container acord my-3 px-5 py-3">
+    <article class="container acord my-3 px-5 py-3" data-aos="flip-down" data-aos-delay="300">
         <div class="accordion-wrap">
             <div class="accordion-item">        
                 <h2 class="accordion-header">
@@ -153,16 +153,17 @@
             </div>
         </div>
     </article>
-    <section class="container-fluid d-flex mt-5 mb-5 bck">
-        <div class="row">
+    <section class="container-fluid d-flex mt-5 mb-5 bck" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="row" data-aos="flip-down" data-aos-delay="1000">
             <div class="col">
                 <div class="row">
-                    <div class="col-lg-12 ms-3">
-                        <h1 id="texto" style="color: #f5bf57;" class=" display-3 fw-bold mb-3 mt-5">Sabías que...</h1>
-                        <p class="lead text-warning text-justify mt-5">Las pirámides de Giza no eran solo tumbas para los faraones, sino monumentos colosales construidos para asegurar su paso a 
-                            la vida después de la muerte. Los antiguos egipcios creían que el faraón se convertiría en un dios al morir, y la pirámide 
+                    <div class="col-lg-12">
+                        <h1 class="dyk">Sabías que...</h1>
+                        <p class="lead text-warning text-justify">Las pirámides de Giza no eran solo tumbas para los faraones, sino monumentos colosales construidos para asegurar su paso a 
+                            la vida después de la muerte. Los antiguos egipcios creían que el faraón se convertiría en un Dios al morir, y la pirámide 
                             servía como una especie de "escalera"para ascender al cielo.
                         </p>
+                        <img class="w-100"height="250" src="/img/dato_curioso.png" alt="Imagen inspo del texto">
                     </div>
                 </div>
             </div>
@@ -170,7 +171,7 @@
                 <table class="table table-borderless ">
                     <thead>
                         <tr>
-                        <th scope="col" class="text-info display-3">Contacto</th>
+                        <th scope="col" class="title-table display-1">Contacto</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -178,7 +179,7 @@
                             <td>
                                 <form>
                                     <div class="row">
-                                        <div class="col-5">
+                                        <div class="col-6">
                                             <label for="contname" class="form-label">Nombres:</label>
                                             <input type="text" class="form-control" id="contname" name="contname" placeholder="Nombres">
                                         </div>
@@ -198,7 +199,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-12 d-flex mt-3">
-                                            <label for="mov" class="form-label me-5">Motivo:</label>
+                                            <label for="mov" class="form-label me-4">Motivo:</label>
                                             <div class="d-flex">
                                                 <div class="list-group mx-0">
                                                     <label class="list-group-item d-flex gap-2">
@@ -233,7 +234,7 @@
             </div>
         </div>
     </section>
-    <div class="fot">
+    <div class="fot" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
         <footer class="text-center text-white">
             <div class="container p-4 pb-0">
                 <section class="mb-2">
@@ -355,6 +356,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/JS/login.js"></script>
     <script src="/JS/us.js"></script>
 </body>
