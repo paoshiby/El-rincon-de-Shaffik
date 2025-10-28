@@ -30,11 +30,22 @@
 }
 .acord{
   background-color: var(--color-back);
-  height: 100vh;
+  min-height: 90vh;
   color: var(--color-siete);
 }
 #tte{
-  font-size: xx-large;
+  font-size: 50px;
+  color: var(--color-cuatro);
+  font-family: var(--fuente-siete);
+}
+.fact strong,
+.fact li{
+  list-style: none;
+  font-size: 20px;
+}
+.fact #fct{
+  font-family: var(--fuente-uno);
+  font-size: 40px;
 }
 .theme{
   font-size: large;
@@ -121,4 +132,11 @@
 .accordion-wrap .accordion-button.collapsed .accordion-toggle span.two {
   opacity: 1;
   transform: rotate(0);
+}
+.btnPaises{
+  color: var(--color-cuatro);
+  background-color: rgba(255, 255, 255, 0.14);
+  font-family: var(--fuente-cinco);
+  font-size: 40px;
+  margin-top: 5%;
 }
